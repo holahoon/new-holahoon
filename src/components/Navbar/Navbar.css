@@ -1,0 +1,32 @@
+.Navbar-container {
+  /* position: fixed; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0 1rem 0;
+  /* font-family: "IBMPlexSans";
+  font-weight: 600; */
+  font-family: "DM Sans", sans-serif;
+  background: transparent;
+}
+
+.Navbar-ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Navbar-ul li:nth-child(2) {
+  margin-left: 3.5rem;
+}
+
+.NavLink {
+  color: #343434;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.Logo {
+  font-size: 1.7rem;
+  font-weight: 600;
+}

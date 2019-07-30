@@ -1,0 +1,68 @@
+.MainPage {
+  /* background-color: #dcdcdc; */
+  font-family: "DM Sans", sans-serif;
+}
+
+.MainPage-header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.MainPage-h1-content {
+  font-size: 8rem;
+  color: #343434;
+  margin-top: -2%;
+}
+
+.MainPage-h5-content {
+  font-size: 1.3rem;
+  color: #8f8f8f;
+  margin-top: -2%;
+  margin-left: 21.5%;
+  display: inline-block;
+}
+
+.MainPage-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 5rem;
+}
+
+.MainPage-h3-content {
+  color: #8f8f8f;
+  font-size: 0.93rem;
+  margin-bottom: 1rem;
+  transition: color 0.5s ease;
+}
+
+.MainPage-h3-content:hover {
+  color: #343434;
+}
+
+.MainPage-line {
+  height: 1px;
+  width: 15rem;
+  background-color: #343434;
+}
+
+.SNS-group a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.35rem;
+  margin-top: 0.7rem;
+  color: #8f8f8f;
+  transition: color 0.5s ease;
+}
+
+.SNS-group a:hover {
+  color: #343434;
+}
+
+@media (max-width: 400px) {
+  .MainPage-h1-content {
+    font-size: 3rem;
+  }
+}
