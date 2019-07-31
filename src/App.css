@@ -36,6 +36,10 @@ ol {
   outline: none;
 }
 
+a:hover {
+  color: #343434;
+}
+
 /* == Global fonts == */
 /* IBMPlexMono */
 @font-face {

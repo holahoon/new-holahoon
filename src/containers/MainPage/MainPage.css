@@ -1,5 +1,4 @@
 .MainPage {
-  /* background-color: #dcdcdc; */
   font-family: "DM Sans", sans-serif;
 }
 
@@ -39,26 +38,13 @@
 
 .MainPage-h3-content:hover {
   color: #343434;
+  cursor: default;
 }
 
 .MainPage-line {
   height: 1px;
   width: 15rem;
   background-color: #343434;
-}
-
-.SNS-group a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.35rem;
-  margin-top: 0.7rem;
-  color: #8f8f8f;
-  transition: color 0.5s ease;
-}
-
-.SNS-group a:hover {
-  color: #343434;
 }
 
 @media (max-width: 400px) {

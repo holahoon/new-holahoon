@@ -25,7 +25,7 @@ const navbar = () => {
           <li>
             <NavLink
               className={"NavLink"}
-              activeStyle={{ color: "tomato" }}
+              activeStyle={{ color: "#343434" }}
               to="/Projects"
             >
               Projects
