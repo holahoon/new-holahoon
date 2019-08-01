@@ -5,7 +5,7 @@ import "./SNS.css";
 
 const SNS = () => {
   return (
-    <Fade right cascade duration={1400} delay={600}>
+    <Fade right cascade duration={1200} delay={800}>
       <div className={"SNS-group margin-right-1"}>
         <a
           href="https://github.com/holahoon"

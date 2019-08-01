@@ -20,6 +20,17 @@
   margin-left: 3.5rem;
 }
 
+.Navbar-ul-about {
+  color: #343434;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
+}
+
+.selected {
+  color: #fb4b53;
+}
+
 .NavLink {
   color: #343434;
   font-weight: 500;
@@ -27,8 +38,10 @@
   transition: color 0.3s ease;
 }
 
-.NavLink:hover {
+.NavLink:hover,
+.Navbar-ul-about:hover {
   color: #fb4b53;
+  cursor: pointer;
 }
 
 .Logo {

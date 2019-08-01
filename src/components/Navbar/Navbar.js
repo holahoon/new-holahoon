@@ -4,7 +4,7 @@ import { Fade } from "react-reveal";
 
 import "./Navbar.css";
 
-const navbar = () => {
+const navbar = props => {
   return (
     <nav className={"Navbar-container"}>
       <Fade bottom cascade duration={1000}>
@@ -31,14 +31,22 @@ const navbar = () => {
               Projects
             </NavLink>
           </li>
-          <li>
-            <NavLink
+          <li
+            className={
+              props.stateData.showModal
+                ? "Navbar-ul-about selected"
+                : "Navbar-ul-about"
+            }
+            onClick={props.openModal}
+          >
+            About
+            {/*<NavLink
               className={"NavLink"}
               activeStyle={{ color: "#fb4b53" }}
               to="/Contact"
             >
               Contact
-            </NavLink>
+            </NavLink>*/}
           </li>
         </ul>
       </Fade>

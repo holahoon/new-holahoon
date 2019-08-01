@@ -1,0 +1,46 @@
+.About-container {
+  width: 50%;
+  /* height: 75%; */
+  position: fixed;
+  top: 20%;
+  left: 25%;
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -65%); */
+  padding: 2rem;
+  /* padding: 7rem 4rem; */
+  background-color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px #e2e2e2;
+  box-sizing: border-box;
+  z-index: 101;
+  transition: transform 0.4s ease-in;
+}
+
+.About-close {
+  font-size: 1.5rem;
+  color: #8f8f8f;
+  float: right;
+  /* margin: 0.5rem 0.5rem 0 0; */
+  padding: 0.7rem;
+  transition: color 0.2s ease;
+}
+.About-close:hover {
+  cursor: pointer;
+  color: #fd655f;
+}
+
+.About-content {
+  margin: 5rem 3rem;
+}
+
+.About-h1 {
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+
+.About-p {
+  font-weight: 400;
+  font-size: 1.15rem;
+}
