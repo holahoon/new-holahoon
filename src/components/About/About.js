@@ -1,45 +1,65 @@
-import React from "react";
+import React, { Component } from "react";
+import { Fade } from "react-reveal";
 
 import Backdrop from "../Backdrop/Backdrop";
 
 import "./About.css";
 
-const about = props => {
-  return (
-    <React.Fragment>
-      <Backdrop stateData={props.stateData} closeModal={props.closeModal} />
-      <div
-        className={"About-container"}
-        style={{
-          transform: props.stateData.showModal
-            ? "translateY(0)"
-            : "translateY(30vh)",
-          opacity: props.stateData.showModal ? "1" : "0"
-        }}
-      >
-        <div className={"About-close"} onClick={props.closeModal}>
-          <i className="fas fa-times" />
-        </div>
-        <div className={"About-content"}>
-          <h1 className={"About-h1"}>
-            Hey! I'm David Kim, a Front End Developer
-          </h1>
-          <p className={"About-p"}>
-            I develop and build creative & responsive web applications.
-            <br />
-            some sample texts
-            <br />
-            I'm available at
-          </p>
-          <a href="mailto:hola.hoon@gmail.com">
-            hola.hoon
-            <i className="fas fa-at" />
-            gmail.com
-          </a>
-        </div>
-      </div>
-    </React.Fragment>
-  );
-};
+class About extends Component {
+  shouldComponentUpdate(nextProps, nextState) {
+    // console.log("nextProps.showModal", nextProps.showModal);
+    // console.log("this.props.showModal", this.props.showModal);
 
-export default about;
+    return nextProps.showModal !== this.props.showModal;
+  }
+
+  render() {
+    return (
+      <React.Fragment>
+        <Backdrop
+          showModal={this.props.showModal}
+          closeModal={this.props.closeModal}
+        />
+        <div
+          className={"About-container"}
+          style={{
+            transform: this.props.showModal
+              ? "translateY(0)"
+              : "translateY(-70vh)",
+            opacity: this.props.showModal ? "1" : "0"
+          }}
+        >
+          <div className={"About-close"} onClick={this.props.closeModal}>
+            <i className="fas fa-times" />
+          </div>
+          <div className={"About-content"}>
+            <h1 className={"About-h1"}>
+              Hey! I'm David Kim,
+              <br /> a Front End Developer
+            </h1>
+            <p className={"About-p"}>
+              I could not be anymore happier ever since I started web
+              development. Always strive to be better and humbly learn from
+              mistakes. I am looking to further improve my skills and take part
+              in a team.
+            </p>
+            <p className={"About-contact"}>
+              Please, feel free to :
+              <a href="mailto:hola.hoon@gmail.com">
+                hola.hoon
+                <i className="fas fa-at" />
+                gmail.com
+              </a>
+            </p>
+            <p className={"About-phrase"}>
+              " User interface is like a joke. If you have to explain it, it
+              isn't that good. "
+            </p>
+          </div>
+        </div>
+      </React.Fragment>
+    );
+  }
+}
+
+export default About;

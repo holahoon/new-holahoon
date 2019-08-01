@@ -29,7 +29,9 @@ class MainPage extends Component {
 
           <div className={"MainPage-bottom"}>
             <div className={"margin-left-1"}>
-              <h3 className={"MainPage-h3-content"}>Front End Developer</h3>
+              <Fade left cascade duration={700}>
+                <h3 className={"MainPage-h3-content"}>Front End Developer</h3>
+              </Fade>
               <div className={"MainPage-line"} />
             </div>
 

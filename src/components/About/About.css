@@ -15,7 +15,7 @@
   box-shadow: 0 2px 5px #e2e2e2;
   box-sizing: border-box;
   z-index: 101;
-  transition: transform 0.4s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .About-close {
@@ -24,6 +24,7 @@
   float: right;
   /* margin: 0.5rem 0.5rem 0 0; */
   padding: 0.7rem;
+  line-height: 0;
   transition: color 0.2s ease;
 }
 .About-close:hover {
@@ -32,15 +33,37 @@
 }
 
 .About-content {
-  margin: 5rem 3rem;
+  margin: 5rem 3rem 2rem 3rem;
 }
 
 .About-h1 {
   font-weight: 500;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 
 .About-p {
   font-weight: 400;
   font-size: 1.15rem;
+  margin-bottom: 0.9rem;
+  color: #8f8f8f;
+}
+
+.About-contact {
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: #8f8f8f;
+  letter-spacing: 1.3px;
+}
+.About-contact a {
+  color: #343434;
+  font-size: 1.1rem;
+  margin-left: 0.7rem;
+}
+
+.About-phrase {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #8f8f8f;
+  margin-top: 1.7rem;
 }

@@ -3,7 +3,7 @@ import React from "react";
 import "./Backdrop.css";
 
 const backdrop = props => {
-  return props.stateData.showModal ? (
+  return props.showModal ? (
     <section className={"Backdrop"} onClick={props.closeModal} />
   ) : null;
 };

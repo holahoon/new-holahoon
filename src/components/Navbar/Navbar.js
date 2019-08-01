@@ -33,7 +33,7 @@ const navbar = props => {
           </li>
           <li
             className={
-              props.stateData.showModal
+              props.showModal
                 ? "Navbar-ul-about selected"
                 : "Navbar-ul-about"
             }

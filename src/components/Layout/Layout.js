@@ -17,12 +17,16 @@ class Layout extends Component {
   };
 
   render() {
-    const about = <About stateData={this.state} closeModal={this.hideModal} />;
+    // const about = (
+    //   <About showModal={this.state.showModal} closeModal={this.hideModal} />
+    // );
 
     return (
       <React.Fragment>
-        <Navbar stateData={this.state} openModal={this.showModal} />
-        {this.state.showModal ? about : null}
+        <Navbar showModal={this.state.showModal} openModal={this.showModal} />
+        {/*this.state.showModal ? about : null*/}
+        <About showModal={this.state.showModal} closeModal={this.hideModal} />
+
         {this.props.children}
       </React.Fragment>
     );
