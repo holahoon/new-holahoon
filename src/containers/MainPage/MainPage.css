@@ -30,20 +30,20 @@
 }
 
 .MainPage-h3-content {
-  color: #8f8f8f;
+  color: #343434;
+  font-weight: 500;
   font-size: 0.93rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
   transition: color 0.5s ease;
 }
 
 .MainPage-h3-content:hover {
-  color: #343434;
   cursor: default;
 }
 
 .MainPage-line {
   height: 1px;
-  width: 15rem;
+  width: 13rem;
   background-color: #343434;
 }
 

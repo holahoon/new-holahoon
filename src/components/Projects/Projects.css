@@ -5,42 +5,56 @@
   flex-wrap: wrap;
   font-family: "DM Sans", sans-serif;
   margin-top: 7rem;
-  margin-bottom: 4rem;
+  margin-bottom: 7rem;
 }
 
 .Project-container {
   min-width: 0;
-  margin: 2rem 1.5rem;
+  margin: 1.5rem;
   display: flex;
   flex-direction: column;
   width: 400px;
   box-shadow: 0 2px 5px #e2e2e2;
 }
 
+.Project-image {
+  width: 400px;
+  /* background-image: url("../../assets//images/zunsungan.png"); */
+}
+
 .Project-container img {
-  /* width: 400px; */
+  width: 400px;
   max-width: 100%;
   height: 250px;
+}
+
+.Project-container img:hover {
+  opacity: 0.7;
 }
 
 .Project-container h3 {
   padding: 0.7rem 1rem 0rem 1rem;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .Project-container h3 a {
   color: #343434;
   font-weight: 600;
   font-size: 1.45rem;
+  transition: color 0.3s ease;
 }
 .Project-container h3 a:nth-child(2) {
   color: #8f8f8f;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
+}
+
+.Project-container h3 a:nth-child(2):hover {
+  color: #fb4b53;
 }
 
 .Project-container p {
-  padding: 0.7rem 1rem 0.7rem 1rem;
+  padding: 0.4rem 1rem 0.7rem 1rem;
 }

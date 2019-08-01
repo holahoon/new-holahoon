@@ -21,14 +21,22 @@
 }
 
 .NavLink {
-  color: #8f8f8f;
+  color: #343434;
   font-weight: 500;
   font-size: 1.05rem;
   transition: color 0.3s ease;
 }
 
+.NavLink:hover {
+  color: #fb4b53;
+}
+
 .Logo {
   font-size: 1.7rem;
-  font-weight: 600;
+  font-weight: 500;
+  color: #343434;
+}
+
+.Logo:hover {
   color: #343434;
 }

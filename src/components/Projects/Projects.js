@@ -20,14 +20,22 @@ class Projects extends Component {
         projectTitle: "Remnant Ministry",
         projectDescription:
           "Web service for users to view different events and register",
-        projectDemo: "holahoon.com",
+        projectDemo: "https://holahoon.com/",
+        projectGithub: "https://github.com/holahoon"
+      },
+      {
+        projectName: firstHolaHoon,
+        projectTitle: "Personal Portfolio",
+        projectDescription:
+          "Previous personal portfolio collaborated with a designer",
+        projectDemo: "https://holahoon.com/",
         projectGithub: "https://github.com/holahoon"
       },
       {
         projectName: zunSungAn,
         projectTitle: "Jun Sung An",
         projectDescription: "Portfolio built for a designer",
-        projectDemo: "holahoon.com",
+        projectDemo: "https://holahoon.com/",
         projectGithub: "https://github.com/holahoon"
       },
       {
@@ -35,23 +43,15 @@ class Projects extends Component {
         projectTitle: "Fivie",
         projectDescription:
           "Single page movie application collaborated with a designer",
-        projectDemo: "holahoon.com",
-        projectGithub: "https://github.com/holahoon"
-      },
-      {
-        projectName: firstHolaHoon,
-        projectTitle: "Personal portfolio",
-        projectDescription:
-          "Previous personal portfolio collaborated with a designer",
-        projectDemo: "holahoon.com",
+        projectDemo: "https://holahoon.com/",
         projectGithub: "https://github.com/holahoon"
       },
       {
         projectName: zigoGraph,
         projectTitle: "ZigoGraph",
         projectDescription:
-          "A data viz application displaying cryptocurrency(Bitcoin) value",
-        projectDemo: "holahoon.com",
+          "A data viz application displaying cryptocurrency (Bitcoin) value",
+        projectDemo: "https://holahoon.com/",
         projectGithub: "https://github.com/holahoon"
       },
       {
@@ -59,7 +59,7 @@ class Projects extends Component {
         projectTitle: "OntheCloud",
         projectDescription:
           "A weather application that displays weather information of the current or searched city",
-        projectDemo: "holahoon.com",
+        projectDemo: "https://holahoon.com/",
         projectGithub: "https://github.com/holahoon"
       }
     ]
@@ -70,7 +70,7 @@ class Projects extends Component {
       <Fade duration={1500} delay={400}>
         <section className={"Projects margin-left-1 margin-right-1"}>
           {this.state.projects.map((project, index) => {
-            return <Project project={project} index={index} />;
+            return <Project project={project} key={index} />;
           })}
           {/*<Fade bottom duration={1500} delay={400}>
           {this.state.projects.map((project, index) => {

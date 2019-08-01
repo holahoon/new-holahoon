@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import MainPage from "./containers/MainPage/MainPage";
 import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
 
 import "./App.css";
 
@@ -15,6 +16,7 @@ const App = () => {
       <Switch>
         <Route path="/" exact component={MainPage} />
         <Route path="/Projects" component={Projects} />
+        <Route path="/Contact" component={Contact} />
       </Switch>
     </BrowserRouter>
   );

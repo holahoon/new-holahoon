@@ -1,10 +1,16 @@
 import React from "react";
-import { Fade } from "react-reveal";
 
 const project = props => {
   return (
-    <div className={"Project-container"} key={props.index}>
-      <img src={props.project.projectName} alt={props.project.projectTitle} />
+    <div className={"Project-container"}>
+      <a
+        className={"Project-image"}
+        href={props.project.projectDemo}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={props.project.projectName} alt={props.project.projectTitle} />
+      </a>
 
       <div className={"Project-content"}>
         <h3>

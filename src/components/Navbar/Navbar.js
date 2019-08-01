@@ -11,7 +11,7 @@ const navbar = () => {
         <ul className={"Navbar-ul margin-left-1"}>
           <li>
             <NavLink className={"NavLink Logo"} to="/">
-              David Kim
+              DAVID KIM
             </NavLink>
           </li>
           {/*<li style={{ fontSize: "0.85rem", color: "#9e9e9e" }}>
@@ -25,14 +25,18 @@ const navbar = () => {
           <li>
             <NavLink
               className={"NavLink"}
-              activeStyle={{ color: "#343434" }}
+              activeStyle={{ color: "#fb4b53" }}
               to="/Projects"
             >
               Projects
             </NavLink>
           </li>
           <li>
-            <NavLink className={"NavLink"} to="/">
+            <NavLink
+              className={"NavLink"}
+              activeStyle={{ color: "#fb4b53" }}
+              to="/Contact"
+            >
               Contact
             </NavLink>
           </li>
