@@ -17,12 +17,12 @@ li {
   border: 0;
 }
 
-html,
+/* html,
 body {
   width: 100%;
   height: 100%;
   background-color: #ffffff;
-}
+} */
 
 a {
   text-decoration: none;
@@ -35,6 +35,12 @@ ol {
 
 :focus {
   outline: none;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
 }
 
 /* == Global fonts == */

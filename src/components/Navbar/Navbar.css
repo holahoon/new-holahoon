@@ -1,17 +1,15 @@
 .Navbar-container {
-  /* position: fixed; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3rem 0 1rem 0;
-  /* font-family: "IBMPlexSans";
-  font-weight: 600; */
   font-family: "DM Sans", sans-serif;
   background: transparent;
 }
 
 .Navbar-ul {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
@@ -30,7 +28,7 @@
   cursor: pointer;
 }
 
-.Navbar-ul li:nth-child(2) {
+.Navbar-menu:nth-child(2) {
   margin-left: 3.5rem;
 }
 
@@ -68,15 +66,17 @@
   .Logo {
     font-size: 1.5rem;
   }
+  .Navbar-ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
   .NavLink,
   .Navbar-ul-about {
     font-size: 1rem;
   }
-}
-
-/* Iphone X && Iphone 6/7/8 Plus */
-/* @media (max-width: 450px) and (min-height: 700px) {
-  .Navbar-container {
-    padding: 4rem 0 1rem 0;
+  .Navbar-menu:nth-child(2) {
+    margin-left: 0rem;
+    margin-top: 0.3rem;
   }
-} */
+}
