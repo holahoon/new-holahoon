@@ -10,7 +10,7 @@ const navbar = props => {
       <Fade bottom cascade duration={1000}>
         <ul className={"Navbar-ul margin-left-1"}>
           <li>
-            <NavLink className={"NavLink Logo"} to="/">
+            <NavLink className={"Logo"} to="/">
               DAVID KIM
             </NavLink>
           </li>
@@ -33,9 +33,7 @@ const navbar = props => {
           </li>
           <li
             className={
-              props.showModal
-                ? "Navbar-ul-about selected"
-                : "Navbar-ul-about"
+              props.showModal ? "Navbar-ul-about selected" : "Navbar-ul-about"
             }
             onClick={props.openModal}
           >

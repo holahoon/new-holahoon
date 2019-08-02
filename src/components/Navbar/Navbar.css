@@ -16,22 +16,8 @@
   align-items: center;
 }
 
-.Navbar-ul li:nth-child(2) {
-  margin-left: 3.5rem;
-}
-
+.NavLink,
 .Navbar-ul-about {
-  color: #343434;
-  font-weight: 500;
-  font-size: 1.05rem;
-  transition: color 0.3s ease;
-}
-
-.selected {
-  color: #fb4b53;
-}
-
-.NavLink {
   color: #343434;
   font-weight: 500;
   font-size: 1.05rem;
@@ -44,12 +30,53 @@
   cursor: pointer;
 }
 
+.Navbar-ul li:nth-child(2) {
+  margin-left: 3.5rem;
+}
+
+.selected {
+  color: #fb4b53;
+}
+
 .Logo {
   font-size: 1.7rem;
   font-weight: 500;
   color: #343434;
 }
 
-.Logo:hover {
-  color: #343434;
+/* Responsive */
+@media (min-width: 1550px) {
+  .Navbar-container {
+    padding: 4rem 0 1rem 0;
+  }
+  .Logo {
+    font-size: 2rem;
+  }
+  .NavLink,
+  .Navbar-ul-about {
+    font-size: 1.3rem;
+  }
 }
+
+@media (max-width: 1150px) {
+  .Navbar-container {
+    padding: 4rem 0 1rem 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .Logo {
+    font-size: 1.5rem;
+  }
+  .NavLink,
+  .Navbar-ul-about {
+    font-size: 1rem;
+  }
+}
+
+/* Iphone X && Iphone 6/7/8 Plus */
+/* @media (max-width: 450px) and (min-height: 700px) {
+  .Navbar-container {
+    padding: 4rem 0 1rem 0;
+  }
+} */

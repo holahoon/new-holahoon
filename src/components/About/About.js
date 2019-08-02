@@ -21,31 +21,29 @@ class About extends Component {
           closeModal={this.props.closeModal}
         />
         <div
-          className={"About-container"}
-          style={{
-            transform: this.props.showModal
-              ? "translateY(0)"
-              : "translateY(-70vh)",
-            opacity: this.props.showModal ? "1" : "0"
-          }}
+          className={
+            this.props.showModal
+              ? "About-container About-active"
+              : "About-container"
+          }
         >
           <div className={"About-close"} onClick={this.props.closeModal}>
             <i className="fas fa-times" />
           </div>
           <div className={"About-content"}>
             <h1 className={"About-h1"}>
-              Hey! I'm David Kim,
-              <br /> a Front End Developer
+              Hi! I'm David Kim, a Front End Developer
             </h1>
             <p className={"About-p"}>
               I could not be anymore happier ever since I started web
-              development. Always strive to be better and humbly learn from
-              mistakes. I am looking to further improve my skills and take part
-              in a team.
+              development. Always humbly learn from mistakes and strive to be
+              better. I am looking to further improve my skills and take part in
+              a team.
             </p>
             <p className={"About-contact"}>
-              Please, feel free to :
-              <a href="mailto:hola.hoon@gmail.com">
+              - Please, feel free to:
+              <br />
+              <a href="mailto:hola.hoon@gmail.com" className={"About-email"}>
                 hola.hoon
                 <i className="fas fa-at" />
                 gmail.com

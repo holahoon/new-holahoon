@@ -4,7 +4,6 @@ const project = props => {
   return (
     <div className={"Project-container"}>
       <a
-        className={"Project-image"}
         href={props.project.projectDemo}
         target="_blank"
         rel="noopener noreferrer"

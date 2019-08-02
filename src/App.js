@@ -11,18 +11,6 @@ import Projects from "./components/Projects/Projects";
 import "./App.css";
 
 class App extends Component {
-  // state = {
-  //   aboutClicked: false
-  // };
-
-  // showModal = () => {
-  //   this.setState({ aboutClicked: true });
-  // };
-
-  // hideModal = () => {
-  //   this.setState({ aboutClicked: false });
-  // };
-
   render() {
     return (
       <BrowserRouter>
