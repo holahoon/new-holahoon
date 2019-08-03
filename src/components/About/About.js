@@ -28,12 +28,11 @@ class About extends Component {
           }
         >
           <div className={"About-close"} onClick={this.props.closeModal}>
-            <i className="fas fa-times" />
+            {/*<i className="fas fa-times" />*/}x
           </div>
           <div className={"About-content"}>
-            <h1 className={"About-h1"}>
-              Hi! I'm David Kim, a Front End Developer
-            </h1>
+            <h1 className={"About-h1"}>Hi, I'm David Kim</h1>
+            <h2 className={"About-h2"}>Front End Developer</h2>
             <p className={"About-p"}>
               I could not be anymore happier ever since I started web
               development. Always humbly learn from mistakes and strive to be
@@ -41,18 +40,15 @@ class About extends Component {
               a team.
             </p>
             <p className={"About-contact"}>
-              - Please, feel free to:
               <br />
               <a href="mailto:hola.hoon@gmail.com" className={"About-email"}>
-                hola.hoon
-                <i className="fas fa-at" />
-                gmail.com
+                hola.hoon@gmail.com
               </a>
             </p>
-            <p className={"About-phrase"}>
+            {/*<p className={"About-phrase"}>
               " User interface is like a joke. If you have to explain it, it
               isn't that good. "
-            </p>
+        </p>*/}
           </div>
         </div>
       </React.Fragment>

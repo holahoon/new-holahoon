@@ -42,6 +42,11 @@
   color: #343434;
 }
 
+.mobile-menu {
+  font-size: 1.45rem;
+  color: #8f8f8f;
+}
+
 /* Responsive */
 @media (min-width: 1550px) {
   .Navbar-container {
@@ -63,8 +68,11 @@
 }
 
 @media (max-width: 450px) {
+  .Navbar-container {
+    align-items: flex-start;
+  }
   .Logo {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   .Navbar-menu {
     flex-direction: column;
@@ -75,8 +83,8 @@
   .Navbar-ul-about {
     font-size: 1rem;
   }
-  .Navbar-menu:nth-child(2) {
-    margin-left: 0rem;
-    margin-top: 0.3rem;
+  .Navbar-menu li:nth-child(2) {
+    margin-top: 0.4rem;
+    margin-left: 0;
   }
 }

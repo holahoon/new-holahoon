@@ -1,5 +1,6 @@
 .MainPage {
   font-family: "DM Sans", sans-serif;
+  /* background-color: #dadada; */
 }
 
 .MainPage-header {
@@ -106,7 +107,7 @@
   }
   .MainPage-h1-content {
     font-size: 3.5rem;
-    margin-left: 15%;
+    margin-left: 12%;
   }
   .MainPage-h3-content {
     font-size: 1rem;

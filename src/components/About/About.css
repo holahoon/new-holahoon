@@ -7,7 +7,7 @@
   background-color: #ffffff;
   font-family: "DM Sans", sans-serif;
   border-radius: 2px;
-  box-shadow: 0 2px 5px #e2e2e2;
+  /* box-shadow: 0 2px 5px #e2e2e2; */
   box-sizing: border-box;
   z-index: 101;
   opacity: 0;
@@ -34,20 +34,40 @@
 }
 
 .About-content {
-  margin: 5rem 3rem 2rem 3rem;
+  margin: 4rem 3rem 2rem 3rem;
 }
 
 .About-h1 {
   font-weight: 500;
   font-size: 1.65rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
+  display: flex;
+  align-items: center;
 }
+
+.About-h2 {
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: #fd655f;
+  /* margin-left: 0.7rem; */
+  letter-spacing: 0.5px;
+  margin-bottom: 2rem;
+}
+
+/* .About-h1 span {
+  font-size: 1.15rem;
+  color: #fd655f;
+  margin-left: 0.7rem;
+  letter-spacing: 0.3px;
+} */
 
 .About-p {
   font-weight: 400;
   font-size: 1.15rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   color: #8f8f8f;
+  line-height: 1.7;
+  letter-spacing: 0.2px;
 }
 
 .About-contact {
@@ -58,8 +78,8 @@
 
 .About-contact a {
   color: #343434;
-  font-size: 1.1rem;
-  margin-left: 0.7rem;
+  font-size: 1rem;
+  /* margin-left: 0.7rem; */
   letter-spacing: 1.3px;
   transition: color 0.2s ease;
 }
@@ -113,12 +133,15 @@
     left: 20%;
     padding: 2rem;
   }
+  .About-content {
+    margin: 3.5rem 1rem 2rem 1rem;
+  }
   .About-close {
     font-size: 1.45rem;
   }
   .About-h1 {
     font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
   }
   .About-p {
     font-size: 1.15rem;
@@ -129,10 +152,10 @@
   .About-contact a {
     font-size: 1.1rem;
   }
-  .About-phrase {
+  /* .About-phrase {
     font-size: 1rem;
     margin-top: 1.7rem;
-  }
+  } */
 }
 
 @media (max-width: 800px) {
@@ -162,24 +185,21 @@
   .About-active {
     transform: translateX(0);
   }
-  .About-content {
-    margin: 4rem 1rem 2rem 1rem;
-  }
   .About-close {
     font-size: 1.4rem;
   }
   .About-h1 {
-    font-size: 1.3rem;
-    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
   }
   .About-p {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
   }
   .About-contact {
     font-size: 0.85rem;
   }
   .About-contact a {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
   .About-phrase {
     font-size: 0.9rem;
@@ -199,20 +219,21 @@
   .About-content {
     margin: 2.5rem 1rem 0.5rem 1rem;
   }
-  .About-h1 {
+  /* .About-h1 {
     margin-bottom: 0.7rem;
-  }
+  } */
   .About-p {
     font-size: 1rem;
+    margin-bottom: 2rem;
   }
   .About-contact {
     font-size: 0.9rem;
   }
-  .About-contact a {
+  /* .About-contact a {
     font-size: 1rem;
-  }
-  .About-phrase {
+  } */
+  /* .About-phrase {
     font-size: 0.95rem;
     margin-top: 1.3rem;
-  }
+  } */
 }

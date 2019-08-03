@@ -21,9 +21,13 @@ li {
 body {
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #dadada;
 } */
 
+body {
+  /* background: #dadada; */
+  background: #ffffff;
+}
 a {
   text-decoration: none;
 }
@@ -42,6 +46,13 @@ ol {
   height: 100%;
   background-color: #ffffff;
 }
+
+/* ::selection {
+  color: #9fb9ce;
+}
+::-moz-selection {
+  color: #9fb9ce;
+} */
 
 /* == Global fonts == */
 /* IBMPlexMono */
