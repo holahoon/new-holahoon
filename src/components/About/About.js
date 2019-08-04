@@ -31,9 +31,9 @@ class About extends Component {
             <h2 className={"About-h2"}>Front End Developer</h2>
 
             <p className={"About-p"}>
-              When I first learned the basic HTML, I realized how passionate I
-              became that I've been always striving to be better and humbly
-              learn from mistakes.
+              In year 2018, I first learned the basic HTML and realized how
+              passionate I became that I've always been striving to be better
+              and humbly learn from mistakes.
               <br />I am looking to further improve my skills and take part in a
               team.
             </p>
