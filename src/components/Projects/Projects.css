@@ -41,7 +41,7 @@
   background: #343434;
   font-size: 1rem;
   border-radius: 20px;
-  padding: 0.3rem 0.4rem;
+  padding: 0.3rem 0.7rem;
   transition: all 0.3s ease;
 }
 
@@ -60,12 +60,6 @@
   align-items: center;
   margin-bottom: 0.8rem;
 }
-
-/* .Project-content div {
-  color: #343434;
-  font-weight: 600;
-  font-size: 1.45rem;
-} */
 
 .Project-content h3 a,
 .Project-content div {

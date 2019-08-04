@@ -1,7 +1,5 @@
 import React from "react";
 
-// import githubLogo from "../../../assets/images/github-logo.svg";
-
 const project = props => {
   let projectDisable = (
     <div>
@@ -24,15 +22,14 @@ const project = props => {
     <span className={"view-project"}>being developed</span>
   );
   let projectImageLink = (
-    <span className={"view-project"}>
-      <a
-        href={props.project.projectDemo}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        view project
-      </a>
-    </span>
+    <a
+      className={"view-project"}
+      href={props.project.projectDemo}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      view project
+    </a>
   );
 
   return (
@@ -45,22 +42,6 @@ const project = props => {
       {props.project.projectDemo === ""
         ? projectImageDisable
         : projectImageLink}
-      {/*<span className={"view-project"}>
-        <a
-          href={props.project.projectDemo}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View project
-        </a>
-  </span>*/}
-      {/*<a
-        href={props.project.projectDemo}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src={props.project.projectName} alt={props.project.projectTitle} />
-      </a>*/}
 
       <div className={"Project-content"}>
         <h3>

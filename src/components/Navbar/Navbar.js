@@ -5,45 +5,45 @@ import { Fade } from "react-reveal";
 import "./Navbar.css";
 
 const navbar = props => {
-  const mobileMenu = (
-    <ul className={"Navbar-ul margin-right-1 mobile-menu"}>
-      <li />
-      <li />
-      <li />
-    </ul>
-  );
+  // const mobileMenu = (
+  //   <ul className={"Navbar-ul margin-right-1 mobile-menu"}>
+  //     <li />
+  //     <li />
+  //     <li />
+  //   </ul>
+  // );
 
-  const navbarMenu = (
-    <ul className={"Navbar-ul margin-right-1 Navbar-menu"}>
-      <li>
-        <i className="fas fa-bars" />
-      </li>
-      <li>
-        <NavLink
-          className={"NavLink"}
-          activeStyle={{ color: "#fb4b53" }}
-          to="/Projects"
-        >
-          Projects
-        </NavLink>
-      </li>
-      <li
-        className={
-          props.showModal ? "Navbar-ul-about selected" : "Navbar-ul-about"
-        }
-        onClick={props.openModal}
-      >
-        About
-        {/*<NavLink
-        className={"NavLink"}
-        activeStyle={{ color: "#fb4b53" }}
-        to="/Contact"
-      >
-        Contact
-      </NavLink>*/}
-      </li>
-    </ul>
-  );
+  // const navbarMenu = (
+  //   <ul className={"Navbar-ul margin-right-1 Navbar-menu"}>
+  //     <li>
+  //       <i className="fas fa-bars" />
+  //     </li>
+  //     <li>
+  //       <NavLink
+  //         className={"NavLink"}
+  //         activeStyle={{ color: "#fb4b53" }}
+  //         to="/Projects"
+  //       >
+  //         Projects
+  //       </NavLink>
+  //     </li>
+  //     <li
+  //       className={
+  //         props.showModal ? "Navbar-ul-about selected" : "Navbar-ul-about"
+  //       }
+  //       onClick={props.openModal}
+  //     >
+  //       About
+  //       {/*<NavLink
+  //       className={"NavLink"}
+  //       activeStyle={{ color: "#fb4b53" }}
+  //       to="/Contact"
+  //     >
+  //       Contact
+  //     </NavLink>*/}
+  //     </li>
+  //   </ul>
+  // );
 
   return (
     <nav className={"Navbar-container"}>

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Fade } from "react-reveal";
 
 import Backdrop from "../Backdrop/Backdrop";
 
@@ -25,11 +24,12 @@ class About extends Component {
           }
         >
           <div className={"About-close"} onClick={this.props.closeModal}>
-            {/*<i className="fas fa-times" />*/}x
+            x
           </div>
           <div className={"About-content"}>
             <h1 className={"About-h1"}>Hi, I'm David Kim</h1>
             <h2 className={"About-h2"}>Front End Developer</h2>
+
             <p className={"About-p"}>
               When I first learned the basic HTML, I realized how passionate I
               became that I've been always striving to be better and humbly
@@ -37,6 +37,7 @@ class About extends Component {
               <br />I am looking to further improve my skills and take part in a
               team.
             </p>
+
             <ul className={"About-contact"}>
               <li>
                 <a href="mailto:hola.hoon@gmail.com">

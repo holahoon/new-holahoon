@@ -1,6 +1,5 @@
 .MainPage {
   font-family: "DM Sans", sans-serif;
-  /* background-color: #dadada; */
 }
 
 .MainPage-header {
@@ -15,14 +14,6 @@
   margin-top: -2%;
   margin-left: 25%;
 }
-
-/* .MainPage-h5-content {
-  font-size: 1.3rem;
-  color: #8f8f8f;
-  margin-top: -2%;
-  margin-left: 21.5%;
-  display: inline-block;
-} */
 
 .MainPage-bottom {
   display: flex;
