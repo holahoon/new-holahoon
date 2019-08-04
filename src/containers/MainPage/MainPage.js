@@ -15,14 +15,14 @@ class MainPage extends Component {
 
             <h1 className={"MainPage-h1-content"}>
               <Fade left cascade duration={800} delay={400}>
-                Develop
+                Passionate
               </Fade>
             </h1>
 
             {/*<h5 className={"MainPage-h5-content"}>Web</h5>*/}
             <h1 className={"MainPage-h1-content"}>
               <Fade left cascade duration={800} delay={600}>
-                Products
+                Developer
               </Fade>
             </h1>
           </div>

@@ -7,51 +7,98 @@
 }
 
 .Project-container {
-  min-width: 0;
   margin: 1.5rem;
-  display: flex;
-  flex-direction: column;
+  background-color: #ffffff;
   width: 400px;
   box-shadow: 0 2px 6px #e2e2e2, 0 -2px 6px #e2e2e2;
+  border-radius: 5px;
+  position: relative;
 }
 
-.Project-container img {
+.project-image {
   width: 100%;
-  max-width: 100%;
-  height: 230px;
+  height: auto;
+  border-radius: 5px 5px 0 0;
   transition: opacity 0.2s ease;
 }
 
-.Project-container img:hover {
+.project-image:hover ~ .view-project,
+.view-project:hover {
+  opacity: 1;
+}
+
+.Project-container:hover > .project-image {
   opacity: 0.7;
 }
 
-.Project-container h3 {
-  padding: 0.7rem 1rem 0rem 1rem;
+.view-project {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: #ffffff;
+  background: #343434;
+  font-size: 1rem;
+  border-radius: 20px;
+  padding: 0.3rem 0.4rem;
+  transition: all 0.3s ease;
+}
+
+.view-project a {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.Project-content {
+  padding: 1.3rem 2rem 1.5rem 2rem;
+}
+
+.Project-content h3 {
+  /* padding: 0.7rem 1rem 0rem 1rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0.8rem;
 }
 
-.Project-container h3 a {
+.Project-content div {
+  color: #343434;
+  font-weight: 600;
+  font-size: 1.45rem;
+}
+
+/* .github-link-logo {
+  width: 20px;
+  color: #8f8f8f;
+} */
+
+.Project-content h3 a {
   color: #343434;
   font-weight: 600;
   font-size: 1.45rem;
   transition: color 0.3s ease;
 }
-.Project-container h3 a:nth-child(2) {
+
+.Project-content h3 span {
+  font-size: 0.8rem;
+  font-weight: 400;
   color: #8f8f8f;
-  font-weight: 500;
-  font-size: 1rem;
+  margin-left: 0.2rem;
 }
 
-.Project-container h3 a:nth-child(2):hover {
+.Project-content h3 a:nth-child(2) {
+  color: #8f8f8f;
+  font-size: 1.3rem;
+}
+
+.Project-content h3 a:nth-child(2):hover {
   color: #fb4b53;
 }
 
-.Project-container p {
+/* .Project-content p {
   padding: 0.4rem 1rem 0.7rem 1rem;
-}
+} */
 
 /* Responsive */
 @media (min-width: 1550px) {
@@ -66,9 +113,9 @@
     width: 330px;
     margin: 1rem;
   }
-  .Project-container img {
+  /* .Project-container img {
     height: 200px;
-  }
+  } */
   .Project-container h3 a {
     font-size: 1.2rem;
   }
@@ -88,8 +135,26 @@
     width: 280px;
     margin: 1.3rem;
   }
-  .Project-container img {
+  /* .Project-container img {
     height: 160px;
+  } */
+  .view-project {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: #ffffff;
+    background: #343434;
+    font-size: 1rem;
+    border-radius: 20px;
+    padding: 0.3rem 0.4rem;
+    transition: all 0.3s ease;
+  }
+
+  .view-project a {
+    color: #ffffff;
+    font-size: 1rem;
   }
   .Project-container h3 a {
     font-size: 1.1rem;

@@ -12,7 +12,7 @@
   z-index: 101;
   opacity: 0;
   transform: translateY(-100vh);
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .About-active {
@@ -71,21 +71,36 @@
 }
 
 .About-contact {
+  display: flex;
+  flex-direction: row;
   font-weight: 400;
   font-size: 0.95rem;
-  color: #8f8f8f;
+  /* color: #8f8f8f; */
 }
+
+/* .About-contact li {
+  margin-top: 0.3rem;
+} */
 
 .About-contact a {
   color: #343434;
-  font-size: 1rem;
+  font-size: 1.3rem;
   /* margin-left: 0.7rem; */
-  letter-spacing: 1.3px;
-  transition: color 0.2s ease;
 }
 
-.About-contact a:hover {
+.About-contact a i {
+  transition: color 0.2s ease;
+}
+.About-contact li:hover > a i {
   color: #fb4b53;
+}
+
+.About-contact span {
+  color: #8f8f8f;
+  margin-left: 0.4rem;
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 1.3px;
 }
 
 .About-phrase {

@@ -17,16 +17,11 @@ li {
   border: 0;
 }
 
-/* html,
-body {
-  width: 100%;
-  height: 100%;
-  background-color: #dadada;
-} */
-
 body {
   /* background: #dadada; */
   background: #ffffff;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 a {
   text-decoration: none;
@@ -47,97 +42,10 @@ ol {
   background-color: #ffffff;
 }
 
-/* ::selection {
-  color: #9fb9ce;
+/* Hide scroll bar but still scrollable */
+::-webkit-scrollbar {
+  width: 0;
 }
-::-moz-selection {
-  color: #9fb9ce;
-} */
-
-/* == Global fonts == */
-/* IBMPlexMono */
-/* @font-face {
-  font-family: "IBMPlexMono";
-  src: url("./assets/fonts/IBMPlexMono-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: none;
-}
-@font-face {
-  font-family: "IBMPlexMono";
-  src: url("./assets/fonts/IBMPlexMono-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: none;
-}
-@font-face {
-  font-family: "IBMPlexMono";
-  src: url("./assets/fonts/IBMPlexMono-Light.woff") format("woff");
-  font-weight: normal;
-  font-style: none;
-} */
-
-/* IBMPlexSans */
-/* @font-face {
-  font-family: "IBMPlexSans";
-  src: url("./assets/fonts/IBMPlexSans-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: none;
-}
-@font-face {
-  font-family: "IBMPlexSans";
-  src: url("./assets/fonts/IBMPlexSans-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: none;
-}
-@font-face {
-  font-family: "IBMPlexSans";
-  src: url("./assets/fonts/IBMPlexSans-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: none;
-}
-@font-face {
-  font-family: "IBMPlexSans";
-  src: url("./assets/fonts/IBMPlexSans-Light.woff") format("woff");
-  font-weight: 400;
-  font-style: none;
-} */
-
-/* == Global == */
-/* .Col-1 {
-  flex: 0 0 8.33%;
-}
-.Col-2 {
-  flex: 0 0 16.67%;
-}
-.Col-3 {
-  flex: 0 0 25%;
-}
-.Col-4 {
-  flex: 0 0 33.33%;
-}
-.Col-5 {
-  flex: 0 0 41.67%;
-}
-.Col-6 {
-  flex: 0 0 50%;
-}
-.Col-7 {
-  flex: 0 0 58.33%;
-}
-.Col-8 {
-  flex: 0 0 66.67%;
-}
-.Col-9 {
-  flex: 0 0 75%;
-}
-.Col-10 {
-  flex: 0 0 83.33%;
-}
-.Col-11 {
-  flex: 0 0 91.67%;
-}
-.Col-12 {
-  flex: 0 0 100%;
-} */
 
 .margin-left-1 {
   /* margin-left: 8.33%; */

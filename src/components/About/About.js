@@ -7,9 +7,6 @@ import "./About.css";
 
 class About extends Component {
   shouldComponentUpdate(nextProps, nextState) {
-    // console.log("nextProps.showModal", nextProps.showModal);
-    // console.log("this.props.showModal", this.props.showModal);
-
     return nextProps.showModal !== this.props.showModal;
   }
 
@@ -34,21 +31,40 @@ class About extends Component {
             <h1 className={"About-h1"}>Hi, I'm David Kim</h1>
             <h2 className={"About-h2"}>Front End Developer</h2>
             <p className={"About-p"}>
-              I could not be anymore happier ever since I started web
-              development. Always humbly learn from mistakes and strive to be
-              better. I am looking to further improve my skills and take part in
-              a team.
+              When I first learned the basic HTML, I realized how passionate I
+              became that I've been always striving to be better and humbly
+              learn from mistakes.
+              <br />I am looking to further improve my skills and take part in a
+              team.
             </p>
-            <p className={"About-contact"}>
-              <br />
-              <a href="mailto:hola.hoon@gmail.com" className={"About-email"}>
-                hola.hoon@gmail.com
-              </a>
-            </p>
-            {/*<p className={"About-phrase"}>
-              " User interface is like a joke. If you have to explain it, it
-              isn't that good. "
-        </p>*/}
+            <ul className={"About-contact"}>
+              <li>
+                <a href="mailto:hola.hoon@gmail.com">
+                  <i className="fas fa-envelope email-reveal" />
+                  <span>hola.hoon@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/holahoon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-github github-reveal" />
+                  <span>Github</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/holahoon/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-linkedin-in linkedin-reveal" />
+                  <span>Linkedin</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </React.Fragment>

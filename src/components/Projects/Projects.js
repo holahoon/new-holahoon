@@ -27,12 +27,12 @@ class Projects extends Component {
         projectTitle: "Remnant Ministry",
         projectDescription:
           "Web service for users to view different events and register",
-        projectDemo: "https://holahoon.com/",
+        projectDemo: "",
         projectGithub: "https://github.com/holahoon/Remnant-Ministry"
       },
       {
         projectName: firstHolaHoon,
-        projectTitle: "Personal Portfolio",
+        projectTitle: "FED Portfolio",
         projectDescription:
           "Previous personal portfolio collaborated with a designer",
         projectDemo: "https://holahoon.com/",
@@ -41,7 +41,7 @@ class Projects extends Component {
       {
         projectName: zunSungAn,
         projectTitle: "Jun Sung An",
-        projectDescription: "Portfolio built for a designer",
+        projectDescription: "Designer's portfolio built for a designer",
         projectDemo: "https://www.junsungan.com/",
         projectGithub: "https://github.com/holahoon/zun-portfolio"
       },
@@ -65,7 +65,7 @@ class Projects extends Component {
         projectName: onTheCloud,
         projectTitle: "OntheCloud",
         projectDescription:
-          "A weather application that displays weather information of the current or searched city",
+          "A weather application displaying weather information of the current or searched city",
         projectDemo: "https://holahoon.github.io/weather-app/",
         projectGithub: "https://github.com/holahoon/weather-app"
       }
@@ -79,11 +79,6 @@ class Projects extends Component {
           {this.state.projects.map((project, index) => {
             return <Project project={project} key={index} />;
           })}
-          {/*<Fade bottom duration={1500} delay={400}>
-          {this.state.projects.map((project, index) => {
-            return <Project project={project} index={index} />;
-          })}
-        </Fade>*/}
         </section>
 
         <Footer />
