@@ -72,11 +72,6 @@ const project = props => {
             rel="noopener noreferrer"
           >
             <i className="fab fa-github" />
-            {/*<img
-              src={githubLogo}
-              alt="github logo"
-              className={"github-link-logo"}
-            />*/}
           </a>
         </h3>
         <p>{props.project.projectDescription}</p>

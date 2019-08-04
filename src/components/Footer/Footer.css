@@ -8,3 +8,9 @@
   background-color: transparent;
   margin-bottom: 3rem;
 }
+
+@media (max-width: 500px) {
+  .Footer {
+    font-size: 0.65rem;
+  }
+}
