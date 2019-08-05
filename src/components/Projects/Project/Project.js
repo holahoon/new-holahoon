@@ -1,23 +1,6 @@
 import React from "react";
 
 const project = props => {
-  let projectDisable = (
-    <div>
-      {props.project.projectTitle}
-      <span>(being developed)</span>
-    </div>
-  );
-  let projectLink = (
-    <a
-      href={props.project.projectDemo}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {props.project.projectTitle}
-      <span>(view project)</span>
-    </a>
-  );
-
   let projectImageDisable = (
     <span className={"view-project"}>being developed</span>
   );
@@ -29,6 +12,23 @@ const project = props => {
       rel="noopener noreferrer"
     >
       view project
+    </a>
+  );
+
+  let projectDisable = (
+    <div>
+      {props.project.projectTitle}
+      {/*<span>(being developed)</span>*/}
+    </div>
+  );
+  let projectLink = (
+    <a
+      href={props.project.projectDemo}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {props.project.projectTitle}
+      {/*<span>(view project)</span>*/}
     </a>
   );
 

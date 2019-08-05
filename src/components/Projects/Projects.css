@@ -63,6 +63,9 @@
 
 .Project-content h3 a,
 .Project-content div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   color: #343434;
   font-weight: 600;
   font-size: 1.45rem;

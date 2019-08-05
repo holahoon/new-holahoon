@@ -11,18 +11,15 @@ class MainPage extends Component {
       <div className={"MainPage"}>
         <Fade cascade duration={1200} delay={300}>
           <div className={"MainPage-header"}>
-            {/*<h5 className={"MainPage-h5-content"}>Let's</h5>*/}
-
             <h1 className={"MainPage-h1-content"}>
               <Fade left cascade duration={800} delay={400}>
-                Passionate
+                Develop
               </Fade>
             </h1>
 
-            {/*<h5 className={"MainPage-h5-content"}>Web</h5>*/}
             <h1 className={"MainPage-h1-content"}>
               <Fade left cascade duration={800} delay={600}>
-                Developer
+                UI <span style={{ color: "#8f8f8f" }}>/</span> UX
               </Fade>
             </h1>
           </div>
