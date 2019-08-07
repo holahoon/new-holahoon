@@ -9,7 +9,6 @@
 }
 
 .MainPage-h1-content {
-  display: flex;
   font-size: 8rem;
   color: #343434;
   margin-top: -2%;
@@ -29,6 +28,9 @@
   font-size: 0.93rem;
   margin-bottom: 0.7rem;
   transition: color 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
 }
 
 .MainPage-h3-content:hover {

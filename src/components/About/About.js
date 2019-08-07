@@ -34,8 +34,10 @@ class About extends Component {
               In year 2018, I first learned the basic HTML and realized how
               passionate I became that I've always been striving to be better
               and humbly learn from mistakes.
-              <br />I am looking to further improve my skills and take part in a
-              team.
+              <br />I still remember that day in 2018, when I first learned HTML
+              and was totally amazed by it. Ever since then, I've been hustling
+              to be better and humbly learn from failures.
+              <br />
             </p>
 
             <ul className={"About-contact"}>

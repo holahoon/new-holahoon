@@ -14,12 +14,10 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        {/*<Navbar stateData={this.state} clicked={this.showModal} />*/}
         <Layout>
           <Switch>
             <Route path="/" exact component={MainPage} />
             <Route path="/Projects" component={Projects} />
-            {/*<Route path="/Contact" component={Contact} />*/}
           </Switch>
         </Layout>
       </BrowserRouter>
@@ -28,23 +26,3 @@ class App extends Component {
 }
 
 export default App;
-
-// React TransitionGroup for animating through pages
-// <BrowserRouter>
-//   <Navbar />
-
-//   <Route
-//     render={({ location }) => {
-//       return (
-//         <TransitionGroup>
-//           <CSSTransition key={location.key} className="page-slide">
-//             <Switch location={location}>
-//               <Route path="/" exact component={MainPage} />
-//               <Route path="/Projects" component={Projects} />
-//             </Switch>
-//           </CSSTransition>
-//         </TransitionGroup>
-//       );
-//     }}
-//   />
-// </BrowserRouter>;

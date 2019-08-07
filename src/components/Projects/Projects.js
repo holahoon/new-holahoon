@@ -74,7 +74,7 @@ class Projects extends Component {
 
   render() {
     return (
-      <Fade duration={1500} delay={400}>
+      <Fade duration={1300} delay={400}>
         <section className={"Projects"}>
           {this.state.projects.map((project, index) => {
             return <Project project={project} key={index} />;

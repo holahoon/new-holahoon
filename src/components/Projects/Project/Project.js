@@ -34,14 +34,16 @@ const project = props => {
 
   return (
     <div className={"Project-container"}>
-      <img
-        src={props.project.projectName}
-        alt={props.project.projectTitle}
-        className={"project-image"}
-      />
-      {props.project.projectDemo === ""
-        ? projectImageDisable
-        : projectImageLink}
+      <div className={"image-container"}>
+        <img
+          src={props.project.projectName}
+          alt={props.project.projectTitle}
+          className={"project-image"}
+        />
+        {props.project.projectDemo === ""
+          ? projectImageDisable
+          : projectImageLink}
+      </div>
 
       <div className={"Project-content"}>
         <h3>
