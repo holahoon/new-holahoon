@@ -12,7 +12,7 @@
   font-size: 8rem;
   color: #343434;
   margin-top: -2%;
-  margin-left: 25%;
+  /* margin-left: 25%; */
 }
 
 .MainPage-bottom {
@@ -40,7 +40,7 @@
 .MainPage-line {
   height: 1px;
   width: 13rem;
-  background-color: #343434;
+  background-color: #cccccc;
 }
 
 /* Responsive */
@@ -97,11 +97,10 @@
 
 @media (max-width: 450px) {
   .MainPage-header {
-    margin-top: 30%;
+    margin-top: 20%;
   }
   .MainPage-h1-content {
-    font-size: 3.5rem;
-    margin-left: 12%;
+    font-size: 4rem;
   }
   .MainPage-h3-content {
     font-size: 1rem;

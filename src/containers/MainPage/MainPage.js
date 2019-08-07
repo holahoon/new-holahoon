@@ -11,13 +11,13 @@ class MainPage extends Component {
       <div className={"MainPage"}>
         <Fade cascade duration={1200} delay={300}>
           <div className={"MainPage-header"}>
-            <h1 className={"MainPage-h1-content"}>
+            <h1 className={"MainPage-h1-content margin-left-3"}>
               <Fade left cascade duration={800} delay={400}>
                 Front-end
               </Fade>
             </h1>
 
-            <h1 className={"MainPage-h1-content"}>
+            <h1 className={"MainPage-h1-content margin-left-3"}>
               <Fade left cascade duration={800} delay={600}>
                 Developer
               </Fade>

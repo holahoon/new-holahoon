@@ -62,3 +62,12 @@ ol {
 /* .margin-right-2 {
   margin-right: 16.67%;
 } */
+
+@media (max-width: 450px) {
+  .margin-left-1 {
+    margin-left: 8%;
+  }
+  .margin-left-3 {
+    margin-left: 8%;
+  }
+}

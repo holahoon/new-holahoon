@@ -42,6 +42,7 @@
 .Logo {
   font-size: 1.7rem;
   font-weight: 500;
+  text-transform: capitalize;
   color: #343434;
 }
 
@@ -72,19 +73,27 @@
 
 @media (max-width: 450px) {
   .Navbar-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 1rem 0;
+  }
+  .Navbar-container {
     align-items: flex-start;
   }
   .Logo {
-    font-size: 1.6rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.75px;
   }
   .Navbar-menu {
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
+    margin-left: 8%;
+    margin-top: 1.5rem;
   }
   .NavLink,
   .Navbar-ul-about {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
   .Navbar-menu li:nth-child(2) {
     margin-top: 0.4rem;
