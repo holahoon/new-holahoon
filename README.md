@@ -14,3 +14,7 @@
 
 - [React Router](https://github.com/ReactTraining/react-router) - Routing to navigate through different components
 - [React-reveal](https://www.react-reveal.com/) - Different types of animations (used Fade mostly)
+
+## To do
+
+- Planning on implmenting [react-transition-group](https://reactcommunity.org/react-transition-group/) for smoother page route transition

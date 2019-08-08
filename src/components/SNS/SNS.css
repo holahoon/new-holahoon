@@ -31,7 +31,7 @@
   .SNS-group {
     flex-direction: row;
     justify-content: flex-start;
-    margin-left: 12%;
+    margin-left: 8%;
   }
   .SNS-group a {
     margin-top: 4rem;

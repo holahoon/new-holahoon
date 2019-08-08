@@ -17,11 +17,6 @@ class Layout extends Component {
     this.setState({ ...this.state, showModal: false });
   };
 
-  // toggleMenu = () => {
-  //   let menu = this.state.showMenu;
-  //   this.setState({ showMenu: !menu });
-  // };
-
   render() {
     return (
       <React.Fragment>

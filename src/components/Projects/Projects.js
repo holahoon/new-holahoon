@@ -10,12 +10,6 @@ import fivie from "../../assets/images/fivie-resized.jpg";
 import zigoGraph from "../../assets/images/zigograph-resized.jpg";
 import onTheCloud from "../../assets/images/onthecloud-resized.jpg";
 import firstHolaHoon from "../../assets/images/portfolio1-resized.jpg";
-// import remnantMinistry from "../../assets/images/remnant_ministry.png";
-// import zunSungAn from "../../assets/images/junsungan.png";
-// import fivie from "../../assets/images/fivie.png";
-// import zigoGraph from "../../assets/images/zigograph.png";
-// import onTheCloud from "../../assets/images/onthecloud.png";
-// import firstHolaHoon from "../../assets/images/portfolio1.png";
 
 import "./Projects.css";
 
