@@ -5,8 +5,8 @@ import About from "../About/About";
 
 class Layout extends Component {
   state = {
-    showModal: false,
-    showMenu: false
+    showModal: false
+    // showMenu: false
   };
 
   showModal = () => {
@@ -17,23 +17,19 @@ class Layout extends Component {
     this.setState({ ...this.state, showModal: false });
   };
 
-  toggleMenu = () => {
-    let menu = this.state.showMenu;
-    this.setState({ showMenu: !menu });
-  };
+  // toggleMenu = () => {
+  //   let menu = this.state.showMenu;
+  //   this.setState({ showMenu: !menu });
+  // };
 
   render() {
-    // const about = (
-    //   <About showModal={this.state.showModal} closeModal={this.hideModal} />
-    // );
-
     return (
       <React.Fragment>
         <Navbar
           showModal={this.state.showModal}
           showMenu={this.state.showMenu}
           openModal={this.showModal}
-          toggleMenu={this.toggleMenu}
+          // toggleMenu={this.toggleMenu}
         />
         {/*this.state.showModal ? about : null*/}
         <About showModal={this.state.showModal} closeModal={this.hideModal} />

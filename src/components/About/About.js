@@ -17,11 +17,9 @@ class About extends Component {
           closeModal={this.props.closeModal}
         />
         <div
-          className={
-            this.props.showModal
-              ? "About-container About-active"
-              : "About-container"
-          }
+          className={`About-container ${
+            this.props.showModal ? "About-active" : ""
+          }`}
         >
           <div className={"About-close"} onClick={this.props.closeModal}>
             x

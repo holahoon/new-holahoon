@@ -11,10 +11,10 @@
   z-index: 101;
   opacity: 0;
   transform: translateY(-100vh);
-  transition: opacity 0.8s ease-in-out, transform 0.7s ease-in-out;
-  -webkit-transition: opacity 0.8s ease-in-out, transform 0.7s ease-in-out;
-  -moz-transition: opacity 0.8s ease-in-out, transform 0.7s ease-in-out;
-  -o-transition: opacity 0.8s ease-in-out, transform 0.7s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.4s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out, transform 0.4s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out, transform 0.4s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out, transform 0.4s ease-in-out;
 }
 
 .About-active {
