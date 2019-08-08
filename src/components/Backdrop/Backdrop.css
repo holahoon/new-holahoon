@@ -30,13 +30,13 @@
     background-color: rgba(0, 0, 0, 0);
   }
   to {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
   }
 }
 
 @keyframes backgroundFadeOut {
   from {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
   }
   to {
     background-color: rgba(0, 0, 0, 0);

@@ -4,18 +4,18 @@ import { Fade } from "react-reveal";
 import Project from "./Project/Project";
 import Footer from "../Footer/Footer";
 
-// import remnantMinistry from "../../assets/images/remnant_ministry-compressed.png";
-// import zunSungAn from "../../assets/images/junsungan-compressed.png";
-// import fivie from "../../assets/images/fivie-compressed.png";
-// import zigoGraph from "../../assets/images/zigograph-compressed.png";
-// import onTheCloud from "../../assets/images/onthecloud-compressed.png";
-// import firstHolaHoon from "../../assets/images/portfolio1-compressed.png";
-import remnantMinistry from "../../assets/images/remnant_ministry.png";
-import zunSungAn from "../../assets/images/junsungan.png";
-import fivie from "../../assets/images/fivie.png";
-import zigoGraph from "../../assets/images/zigograph.png";
-import onTheCloud from "../../assets/images/onthecloud.png";
-import firstHolaHoon from "../../assets/images/portfolio1.png";
+import remnantMinistry from "../../assets/images/remnant_ministry-compressed.png";
+import zunSungAn from "../../assets/images/junsungan-compressed.png";
+import fivie from "../../assets/images/fivie-compressed.png";
+import zigoGraph from "../../assets/images/zigograph-compressed.png";
+import onTheCloud from "../../assets/images/onthecloud-compressed.png";
+import firstHolaHoon from "../../assets/images/portfolio1-compressed.png";
+// import remnantMinistry from "../../assets/images/remnant_ministry.png";
+// import zunSungAn from "../../assets/images/junsungan.png";
+// import fivie from "../../assets/images/fivie.png";
+// import zigoGraph from "../../assets/images/zigograph.png";
+// import onTheCloud from "../../assets/images/onthecloud.png";
+// import firstHolaHoon from "../../assets/images/portfolio1.png";
 
 import "./Projects.css";
 
