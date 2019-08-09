@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 
+import githubLogo from "../../assets/images/github-icon-dark.svg";
+import linkedinLogo from "../../assets/images/linkedin-dark.svg";
+import emailLogo from "../../assets/images/email-dark.svg";
 import Backdrop from "../Backdrop/Backdrop";
+import SNS from "../SNS/SNS";
 
 import "./About.css";
 
@@ -35,34 +39,16 @@ class About extends Component {
               <br />
             </p>
 
-            <ul className={"About-contact"}>
-              <li>
-                <a href="mailto:hola.hoon@gmail.com">
-                  <i className="fas fa-envelope email-reveal" />
-                  <span>hola.hoon@gmail.com</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/holahoon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-github github-reveal" />
-                  <span>Github</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/holahoon/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-linkedin-in linkedin-reveal" />
-                  <span>Linkedin</span>
-                </a>
-              </li>
-            </ul>
+            <SNS
+              SNSclassName={"About-contact"}
+              email={"hola.hoon@gmail.com"}
+              envelopIcon={emailLogo}
+              github={"Github"}
+              githubIcon={githubLogo}
+              githubLink={"new-holahoon"}
+              linkedin={"LinkedIn"}
+              linkedInIcon={linkedinLogo}
+            />
           </div>
         </div>
       </React.Fragment>

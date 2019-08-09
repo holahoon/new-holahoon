@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { Fade } from "react-reveal";
 
 import SNS from "../../components/SNS/SNS";
+import githubIcon from "../../assets/images/github-icon.svg";
+import linkedInIcon from "../../assets/images/linkedin.svg";
+import envelopIcon from "../../assets/images/email.svg";
 
 import "./MainPage.css";
 
@@ -32,7 +35,12 @@ class MainPage extends Component {
               <div className={"MainPage-line"} />
             </div>
 
-            <SNS />
+            <SNS
+              SNSclassName={"SNS-group margin-right-1"}
+              githubIcon={githubIcon}
+              linkedInIcon={linkedInIcon}
+              envelopIcon={envelopIcon}
+            />
           </div>
         </Fade>
       </div>

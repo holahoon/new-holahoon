@@ -3,16 +3,22 @@ import { Fade } from "react-reveal";
 
 import "./SNS.css";
 
-const SNS = () => {
+const SNS = props => {
   return (
-    <Fade cascade delay={600}>
-      <div className={"SNS-group margin-right-1"}>
+    <div className={props.SNSclassName}>
+      <Fade cascade delay={600}>
+        <a href="mailto:hola.hoon@gmail.com">
+          <img src={props.envelopIcon} alt="Envelop icon" />
+          <span>{props.email}</span>
+        </a>
+
         <a
-          href="https://github.com/holahoon"
+          href={`https://github.com/holahoon/${props.githubLink}`}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-github" />
+          <img src={props.githubIcon} alt="Github icon" />
+          <span>{props.github}</span>
         </a>
 
         <a
@@ -20,15 +26,16 @@ const SNS = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-linkedin-in" />
+          <img src={props.linkedInIcon} alt="Linkedin icon" />
+          <span>{props.linkedin}</span>
         </a>
-
-        <a href="mailto:hola.hoon@gmail.com">
-          <i className="fas fa-envelope" />
-        </a>
-      </div>
-    </Fade>
+      </Fade>
+    </div>
   );
+};
+
+SNS.defaultProps = {
+  githubLink: ""
 };
 
 export default SNS;

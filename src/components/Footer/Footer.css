@@ -6,11 +6,17 @@
   color: #bbbbbb;
   text-align: center;
   background-color: transparent;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
-@media (max-width: 500px) {
+.Footer img{
+  width: 40px;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 450px) {
   .Footer {
     font-size: 0.65rem;
+    margin-bottom: 2rem;
   }
 }

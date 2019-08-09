@@ -29,7 +29,7 @@ class Projects extends Component {
         projectTitle: "FED Portfolio",
         projectDescription:
           "Previous personal portfolio collaborated with a designer",
-        projectDemo: "https://holahoon.com/",
+        projectDemo: "https://holahoon.github.io/holahoon/",
         projectGithub: "https://github.com/holahoon/holahoon"
       },
       {

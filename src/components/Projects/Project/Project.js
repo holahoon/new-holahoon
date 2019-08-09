@@ -1,9 +1,9 @@
 import React from "react";
 
+import githubLogo from "../../../assets/images/github-icon.svg";
+
 const project = props => {
-  let projectImageDisable = (
-    <span className={"view-project"}>being developed</span>
-  );
+  let projectImageDisable = <span className={"view-project"}>in progress</span>;
   let projectImageLink = (
     <a
       className={"view-project"}
@@ -15,12 +15,7 @@ const project = props => {
     </a>
   );
 
-  let projectDisable = (
-    <div>
-      {props.project.projectTitle}
-      {/*<span>(being developed)</span>*/}
-    </div>
-  );
+  let projectDisable = <div>{props.project.projectTitle}</div>;
   let projectLink = (
     <a
       href={props.project.projectDemo}
@@ -28,7 +23,6 @@ const project = props => {
       rel="noopener noreferrer"
     >
       {props.project.projectTitle}
-      {/*<span>(view project)</span>*/}
     </a>
   );
 
@@ -54,7 +48,7 @@ const project = props => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fab fa-github" />
+            <img src={githubLogo} alt="Github-logo" />
           </a>
         </h3>
         <p>{props.project.projectDescription}</p>
