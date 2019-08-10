@@ -20,24 +20,24 @@ class Projects extends Component {
         projectName: remnantMinistry,
         projectTitle: "Remnant Ministry",
         projectDescription:
-          "Web service for users to view different events and register",
+          "Started web service for users to view different events and register",
         projectDemo: "",
         projectGithub: "https://github.com/holahoon/Remnant-Ministry"
+      },
+      {
+        projectName: zunSungAn,
+        projectTitle: "Jun Sung An",
+        projectDescription: "Collaborated a portfolio built for a designer",
+        projectDemo: "https://www.junsungan.com/",
+        projectGithub: "https://github.com/holahoon/zun-portfolio"
       },
       {
         projectName: firstHolaHoon,
         projectTitle: "FED Portfolio",
         projectDescription:
-          "Previous personal portfolio collaborated with a designer",
+          "Developed a personal portfolio in collaboration with a designer",
         projectDemo: "https://holahoon.github.io/holahoon/",
         projectGithub: "https://github.com/holahoon/holahoon"
-      },
-      {
-        projectName: zunSungAn,
-        projectTitle: "Jun Sung An",
-        projectDescription: "Designer's portfolio built for a designer",
-        projectDemo: "https://www.junsungan.com/",
-        projectGithub: "https://github.com/holahoon/zun-portfolio"
       },
       {
         projectName: fivie,
