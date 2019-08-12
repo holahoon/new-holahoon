@@ -33,10 +33,10 @@ class About extends Component {
             <h2 className={"About-h2"}>Front End Developer</h2>
 
             <p className={"About-p"}>
-              Just one year ago, I learned the basic HTML by following tutorials
-              and realized how passionate I became that I've always been
-              striving to be better and humbly learn from mistakes.
-              <br />
+              As a person with passion in web development, I always desire to
+              strive for improvement. I am also open-minded about listening to
+              others and humbly learn from mistakes.
+              <br />I have a thing for ReactJS
             </p>
 
             <SNS
