@@ -33,7 +33,7 @@ class About extends Component {
             <h2 className={"About-h2"}>Front End Developer</h2>
 
             <p className={"About-p"}>
-              I started web development with passion which led me to be
+              I started web development with passion and it led me to be
               disciplined in learning continuously. I always strive for
               improvement with an open mind to be a good team player.
             </p>

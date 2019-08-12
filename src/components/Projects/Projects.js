@@ -20,30 +20,66 @@ class Projects extends Component {
         projectName: remnantMinistry,
         projectTitle: "Remnant Ministry",
         projectDescription:
-          "Started web service for users to view different events and register",
+          "Developing a web service for users to view different events and register",
         projectDemo: "",
         projectGithub: "https://github.com/holahoon/Remnant-Ministry"
       },
       {
         projectName: zunSungAn,
         projectTitle: "Jun Sung An",
-        projectDescription: "Collaborated a portfolio built for a designer",
+        projectDescription: (
+          <span>
+            Collaborated with a{" "}
+            <a
+              className={"designer-link"}
+              href="https://www.junsungan.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              designer
+            </a>{" "}
+            in creating his personal portfolio
+          </span>
+        ),
         projectDemo: "https://www.junsungan.com/",
         projectGithub: "https://github.com/holahoon/zun-portfolio"
       },
       {
         projectName: firstHolaHoon,
-        projectTitle: "FED Portfolio",
-        projectDescription:
-          "Developed a personal portfolio in collaboration with a designer",
+        projectTitle: "Personal Portfolio",
+        projectDescription: (
+          <span>
+            Developed a personal portfolio v1 in collaboration with a{" "}
+            <a
+              className={"designer-link"}
+              href="https://jinkyukang.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              designer
+            </a>
+          </span>
+        ),
         projectDemo: "https://holahoon.github.io/holahoon/",
         projectGithub: "https://github.com/holahoon/holahoon"
       },
       {
         projectName: fivie,
         projectTitle: "Fivie",
-        projectDescription:
-          "Single page movie application collaborated with a designer",
+        projectDescription: (
+          <span>
+            Built a single page movie application collaborated with a{" "}
+            <a
+              className={"designer-link"}
+              href="https://jinkyukang.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              designer
+            </a>
+          </span>
+        ),
+        // "Built a single page movie application collaborated with a designer",
         projectDemo: "https://holahoon.github.io/fivie/",
         projectGithub: "https://github.com/holahoon/fivie"
       },
@@ -51,7 +87,7 @@ class Projects extends Component {
         projectName: zigoGraph,
         projectTitle: "ZigoGraph",
         projectDescription:
-          "A data viz application displaying cryptocurrency (Bitcoin) value",
+          "Developed a data viz application displaying cryptocurrency (Bitcoin) value",
         projectDemo: "https://holahoon.github.io/cryptocurrency/",
         projectGithub: "https://github.com/holahoon/cryptocurrency"
       },
@@ -59,7 +95,7 @@ class Projects extends Component {
         projectName: onTheCloud,
         projectTitle: "OntheCloud",
         projectDescription:
-          "A weather application displaying weather information of the current or searched city",
+          "Built an application displaying weather information of the current or searched city",
         projectDemo: "https://holahoon.github.io/weather-app/",
         projectGithub: "https://github.com/holahoon/weather-app"
       }
