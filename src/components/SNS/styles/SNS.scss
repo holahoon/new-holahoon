@@ -1,0 +1,78 @@
+@import "../../../styles/variables";
+
+.SNS-group {
+  @include flex(column, center, center);
+
+  // ---Responsive---
+  @include responsive(mobile) {
+    @include flex(row, flex-start, "");
+    margin-left: 8%;
+  }
+  @include responsive(mobile-rotate) {
+    @include flex(row, "", "");
+  }
+
+  a {
+    margin-top: 0.7rem;
+    color: #8f8f8f;
+
+    // ---Responsive---
+    @include responsive(mobile) {
+      margin-top: 4rem;
+      margin-right: 1.5rem;
+    }
+    @include responsive(bigger-mobile) {
+      margin-top: 6rem;
+    }
+    @include responsive(mobile-rotate) {
+      margin-top: 3rem;
+      margin-right: 1.5rem;
+    }
+
+    // ---Responsive---
+    @include responsive(big-desktop) {
+      font-size: 1.55rem;
+      margin-top: 0.8rem;
+    }
+
+    img {
+      width: 30px;
+    }
+  }
+}
+
+// @media (min-width: 1550px) {
+//   .SNS-group a {
+//     font-size: 1.55rem;
+//     margin-top: 0.8rem;
+//   }
+// }
+
+// @media (max-width: 450px) {
+//   .SNS-group {
+//     flex-direction: row;
+//     justify-content: flex-start;
+//     margin-left: 8%;
+//   }
+//   .SNS-group a {
+//     margin-top: 4rem;
+//     margin-right: 1.5rem;
+//   }
+// }
+
+/* Iphone X && Iphone 6/7/8 Plus */
+// @media (max-width: 450px) and (min-height: 700px) {
+//   .SNS-group a {
+//     margin-top: 6rem;
+//   }
+// }
+
+// @media (max-width: 815px) and (max-height: 415px) {
+//   .SNS-group {
+//     flex-direction: row;
+//   }
+//   .SNS-group a {
+//     margin-top: 3rem;
+//     margin-right: 1.5rem;
+//   }
+// }

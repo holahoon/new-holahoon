@@ -53,12 +53,9 @@ ol {
   margin-left: 12%;
 
   // Responsive---
-  @include responsive(mobie) {
+  @include responsive(mobile) {
     margin-left: 8%;
   }
-  //   @include responsive-mobile {
-  //     margin-left: 8%;
-  //   }
 }
 .margin-left-2 {
   margin-left: 16.67%;
@@ -73,21 +70,12 @@ ol {
   @include responsive(mobile) {
     margin-left: 8%;
   }
-  //   @include responsive-ipad {
-  //     margin-left: 20%;
-  //   }
-  //   @include responsive-mobile {
-  //     margin-left: 8%;
-  //   }
 }
 
 .margin-right-1 {
   margin-right: 12%;
   // Responsive---
-  @include responsive(mobie) {
+  @include responsive(mobile) {
     margin-right: 0%;
   }
-  //   @include responsive-mobile {
-  //     margin-right: 0%;
-  //   }
 }

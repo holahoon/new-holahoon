@@ -4,7 +4,7 @@
   font-family: "DM Sans", sans-serif;
 
   .MainPage-header {
-    @include flex(column, flex-start, flex-start);
+    @include flex(column, "", "");
     margin-top: 10%;
 
     // ---Responsive---
@@ -64,7 +64,7 @@
       @include flex(column, center, flex-start);
       margin-top: 5rem;
     }
-    @include responsive(small-mobile) {
+    @include responsive(bigger-mobile) {
       margin-top: 7rem;
     }
     @include responsive(mobile-rotate) {
