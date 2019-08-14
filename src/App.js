@@ -7,9 +7,8 @@ import Layout from "./components/Layout/Layout";
 import MainPage from "./containers/MainPage/MainPage";
 import Projects from "./components/Projects/Projects";
 
-import "./App.css";
-
-ReactGA.pageview(window.location.pathname + window.location.search);
+// import "./App.css";
+import "./styles/App.scss";
 
 class App extends Component {
   componentDidMount() {

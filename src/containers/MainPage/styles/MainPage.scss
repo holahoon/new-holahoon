@@ -1,0 +1,238 @@
+@import "../../../styles/variables";
+
+.MainPage {
+  font-family: "DM Sans", sans-serif;
+
+  .MainPage-header {
+    @include flex(column, flex-start, flex-start);
+    margin-top: 10%;
+
+    // ---Responsive---
+    @include responsive(big-desktop) {
+      margin-top: 12%;
+    }
+    @include responsive(small-desktop) {
+      margin-top: 15%;
+    }
+    @include responsive(ipad) {
+      margin-top: 20%;
+    }
+    @include responsive(mobile) {
+      margin-top: 20%;
+    }
+
+    h1 {
+      font-size: 8rem;
+      color: color(light-black);
+      margin-top: -2%;
+
+      // ---Responsive---
+      @include responsive(big-desktop) {
+        font-size: 9rem;
+      }
+      @include responsive(small-desktop) {
+        font-size: 7rem;
+        margin-top: -3%;
+      }
+      @include responsive(ipad) {
+        font-size: 5rem;
+      }
+      @include responsive(mobile) {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  .MainPage-bottom {
+    @include flex(row, space-between, flex-end);
+    margin-top: 4rem;
+
+    // ---Responsive---
+    @include responsive(big-desktop) {
+      margin-top: 6rem;
+    }
+    @include responsive(small-desktop) {
+      margin-top: 3rem;
+    }
+    @include responsive(mobile) {
+      @include flex(column, center, flex-start);
+      margin-top: 5rem;
+    }
+
+    h3 {
+      color: color(light-black);
+      font-weight: 500;
+      font-size: 1rem;
+      margin-bottom: 0.7rem;
+      transition: color 0.5s ease;
+      &:hover {
+        cursor: default;
+      }
+
+      // ---Responsive---
+      @include responsive(big-desktop) {
+        font-size: 1.25rem;
+        margin-bottom: 0.9rem;
+      }
+      @include responsive(small-desktop) {
+        font-size: 0.93rem;
+      }
+      @include responsive(ipad) {
+        font-size: 1rem;
+      }
+      @include responsive(mobile) {
+        font-size: 1rem;
+      }
+    }
+
+    .MainPage-line {
+      height: 1px;
+      width: 13rem;
+      background-color: color(light-gray);
+
+      // ---Responsive---
+      @include responsive(big-desktop) {
+        width: 16rem;
+      }
+      @include responsive(small-desktop) {
+        width: 12rem;
+      }
+      @include responsive(mobile) {
+        font-size: 14rem;
+      }
+    }
+  }
+}
+
+/*
+@import "../../../styles/variables";
+
+.MainPage {
+  font-family: "DM Sans", sans-serif;
+
+  .MainPage-header {
+    @include flex(column, flex-start, flex-start);
+    margin-top: 10%;
+
+    // ---Responsive---
+    @include responsive-big-desktop {
+      margin-top: 12%;
+    }
+    @include responsive-small-desktop {
+      margin-top: 15%;
+    }
+    @include responsive-ipad {
+      margin-top: 20%;
+    }
+    @include responsive-mobile {
+      margin-top: 20%;
+    }
+
+    h1 {
+      font-size: 8rem;
+      color: color(light-black);
+      margin-top: -2%;
+
+      // ---Responsive---
+      @include responsive-big-desktop {
+        font-size: 9rem;
+      }
+      @include responsive-small-desktop {
+        font-size: 7rem;
+        margin-top: -3%;
+      }
+      @include responsive-ipad {
+        font-size: 5rem;
+      }
+      @include responsive-mobile {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  .MainPage-bottom {
+    @include flex(row, space-between, flex-end);
+    margin-top: 4rem;
+
+    // ---Responsive---
+    @include responsive-big-desktop {
+      margin-top: 6rem;
+    }
+    @include responsive-small-desktop {
+      margin-top: 3rem;
+    }
+    @include responsive-mobile {
+      @include flex(column, center, flex-start);
+      margin-top: 5rem;
+    }
+
+    h3 {
+      color: color(light-black);
+      font-weight: 500;
+      font-size: 1rem;
+      margin-bottom: 0.7rem;
+      transition: color 0.5s ease;
+      &:hover {
+        cursor: default;
+      }
+
+      // ---Responsive---
+      @include responsive-big-desktop {
+        font-size: 1.25rem;
+        margin-bottom: 0.9rem;
+      }
+      @include responsive-small-desktop {
+        font-size: 0.93rem;
+      }
+      @include responsive-ipad {
+        font-size: 1rem;
+      }
+      @include responsive-mobile {
+        font-size: 1rem;
+      }
+    }
+
+    .MainPage-line {
+      height: 1px;
+      width: 13rem;
+      background-color: color(light-gray);
+
+      // ---Responsive---
+      @include responsive-big-desktop {
+        width: 16rem;
+      }
+      @include responsive-small-desktop {
+        width: 12rem;
+      }
+      @include responsive-mobile {
+        font-size: 14rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) and (min-height: 700px) {
+  .MainPage-bottom {
+    margin-top: 7rem;
+  }
+}
+
+@media (max-width: 815px) and (max-height: 415px) {
+  .MainPage-header {
+    margin-top: 5%;
+  }
+  .MainPage-h1-content {
+    font-size: 3.5rem;
+  }
+  .MainPage-h3-content {
+    font-size: 1rem;
+  }
+  .MainPage-line {
+    width: 12rem;
+  }
+  .MainPage-bottom {
+    margin-top: 1rem;
+  }
+}
+
+*/

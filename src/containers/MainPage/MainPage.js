@@ -6,7 +6,8 @@ import githubIcon from "../../assets/images/github-icon.svg";
 import linkedInIcon from "../../assets/images/linkedin.svg";
 import envelopIcon from "../../assets/images/email.svg";
 
-import "./MainPage.css";
+// import "./MainPage.css";
+import "./styles/MainPage.scss";
 
 class MainPage extends Component {
   render() {
