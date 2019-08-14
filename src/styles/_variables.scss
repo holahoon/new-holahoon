@@ -20,63 +20,38 @@ $textColors: (
 }
 
 // === Responsive
-$big-desktop: 1550px;
-$small-desktop: 1150px;
-$ipad: 800px;
-$mobile: 450px;
+$big-desktop: "(min-width: 1550px)";
+$small-desktop: "(max-width: 1150px)";
+$ipad: "(max-width: 800px)";
+$mobile: "(max-width: 450px)";
+$small-mobile: "(max-width: 450px) and (min-height: 700px)";
+$mobile-rotate: "(max-width: 840px) and (max-height: 450px)";
 
 @mixin responsive($media) {
   @if $media == big-desktop {
-    @media (min-width: #{big-desktop}) {
+    @media #{$big-desktop} {
       @content;
     }
   } @else if $media == small-desktop {
-    @media (max-width: #{small-desktop}) {
+    @media #{$small-desktop} {
       @content;
     }
   } @else if $media == ipad {
-    @media (max-width: #{ipad}) {
+    @media #{$ipad} {
       @content;
     }
   } @else if $media == mobile {
-    @media (max-width: #{mobile}) {
+    @media #{$mobile} {
       @content;
     }
-  }
-}
-
-// @mixin responsive-big-desktop {
-//   @media (min-width: #{$big-desktop}) {
-//     @content;
-//   }
-// }
-
-// @mixin responsive-small-desktop {
-//   @media (max-width: #{$small-desktop}) {
-//     @content;
-//   }
-// }
-
-// @mixin responsive-ipad {
-//   @media (max-width: #{$ipad}) {
-//     @content;
-//   }
-// }
-
-// @mixin responsive-mobile {
-//   @media (max-width: #{$mobile}) {
-//     @content;
-//   }
-// }
-
-// @mixin responsive-rotate-mobile{
-//     @media (max-width: #{$mobile}, min-height: 700px){}
-// }
-
-/* Iphone X && Iphone 6/7/8 Plus */
-@media (max-width: 450px) and (min-height: 700px) {
-  .MainPage-bottom {
-    margin-top: 7rem;
+  } @else if $media == small-mobile {
+    @media #{$small-mobile} {
+      @content;
+    }
+  } @else if $media == mobile-rotate {
+    @media #{$mobile-rotate} {
+      @content;
+    }
   }
 }
 

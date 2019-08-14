@@ -53,9 +53,12 @@ ol {
   margin-left: 12%;
 
   // Responsive---
-//   @include responsive-mobile {
-//     margin-left: 8%;
-//   }
+  @include responsive(mobie) {
+    margin-left: 8%;
+  }
+  //   @include responsive-mobile {
+  //     margin-left: 8%;
+  //   }
 }
 .margin-left-2 {
   margin-left: 16.67%;
@@ -64,18 +67,27 @@ ol {
   margin-left: 25%;
 
   // Responsive---
-//   @include responsive-ipad {
-//     margin-left: 20%;
-//   }
-//   @include responsive-mobile {
-//     margin-left: 8%;
-//   }
+  @include responsive(ipad) {
+    margin-left: 20%;
+  }
+  @include responsive(mobile) {
+    margin-left: 8%;
+  }
+  //   @include responsive-ipad {
+  //     margin-left: 20%;
+  //   }
+  //   @include responsive-mobile {
+  //     margin-left: 8%;
+  //   }
 }
 
 .margin-right-1 {
   margin-right: 12%;
   // Responsive---
-//   @include responsive-mobile {
-//     margin-right: 0%;
-//   }
+  @include responsive(mobie) {
+    margin-right: 0%;
+  }
+  //   @include responsive-mobile {
+  //     margin-right: 0%;
+  //   }
 }

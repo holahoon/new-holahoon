@@ -20,6 +20,9 @@
     @include responsive(mobile) {
       margin-top: 20%;
     }
+    @include responsive(mobile-rotate) {
+      margin-top: 5%;
+    }
 
     h1 {
       font-size: 8rem;
@@ -40,6 +43,9 @@
       @include responsive(mobile) {
         font-size: 4rem;
       }
+      @include responsive(mobile-rotate) {
+        font-size: 3.5rem;
+      }
     }
   }
 
@@ -57,6 +63,12 @@
     @include responsive(mobile) {
       @include flex(column, center, flex-start);
       margin-top: 5rem;
+    }
+    @include responsive(small-mobile) {
+      margin-top: 7rem;
+    }
+    @include responsive(mobile-rotate) {
+      margin-top: 1rem;
     }
 
     h3 {
@@ -234,5 +246,4 @@
     margin-top: 1rem;
   }
 }
-
 */
