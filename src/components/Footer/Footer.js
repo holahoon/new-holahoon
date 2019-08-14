@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 import dkLogo from "../../assets/images/dk-logo.png";
 
-import "./Footer.css";
+// import "./Footer.css";
+import "./styles/Footer.scss";
 
 const footer = () => {
   return (

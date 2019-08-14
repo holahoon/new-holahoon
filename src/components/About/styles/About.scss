@@ -1,0 +1,55 @@
+@import "../../../styles/variables";
+
+.About-container {
+  position: fixed;
+  width: 50%;
+  top: 20%;
+  left: 25%;
+  padding: 2rem;
+  background-color: color(white);
+  font-family: "DM Sans", sans-serif;
+  border-radius: 2px;
+  box-sizing: border-box;
+  z-index: 101;
+  opacity: 0;
+  transform: translateY(-100vh);
+  transition: opacity 0.5s ease-in-out, transform 0.4s ease-in-out;
+
+  .About-close {
+    font-size: 1.5rem;
+    color: color(medium-gray);
+    float: right;
+    padding: 0.7rem;
+    line-height: 0;
+    transition: color 0.2s ease;
+
+    &:hover {
+      cursor: pointer;
+      color: #fd655f;
+    }
+  }
+
+  .About-content {
+    margin: 4rem 3rem 2rem 3rem;
+
+    h1 {
+      font-weight: 500;
+      font-size: 1.65rem;
+      margin-bottom: 0rem;
+      @include flex(row, flex-start, center);
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: 1.05rem;
+      color: color(redish);
+      letter-spacing: 0.5px;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.About-active {
+  opacity: 1;
+  transform: translateY(0);
+}

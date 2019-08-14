@@ -11,7 +11,8 @@ import zigoGraph from "../../assets/images/zigograph-resized.jpg";
 import onTheCloud from "../../assets/images/onthecloud-resized.jpg";
 import firstHolaHoon from "../../assets/images/portfolio1-resized.jpg";
 
-import "./Projects.css";
+// import "./Projects.css";
+import "./styles/Projects.scss";
 
 class Projects extends Component {
   state = {
@@ -79,7 +80,6 @@ class Projects extends Component {
             </a>
           </span>
         ),
-        // "Built a single page movie application collaborated with a designer",
         projectDemo: "https://holahoon.github.io/fivie/",
         projectGithub: "https://github.com/holahoon/fivie"
       },

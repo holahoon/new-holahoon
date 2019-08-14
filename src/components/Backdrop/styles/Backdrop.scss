@@ -1,0 +1,41 @@
+.Backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+
+.backdrop-active {
+  animation-name: backgroundFadeIn;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+}
+
+.backdrop-disable {
+  width: 0%;
+  height: 0%;
+  animation-name: backgroundFadeOut;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  transition-delay: 0.5s;
+}
+
+@keyframes backgroundFadeIn {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+}
+
+@keyframes backgroundFadeOut {
+  from {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}

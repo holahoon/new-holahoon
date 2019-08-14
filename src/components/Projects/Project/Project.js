@@ -44,6 +44,7 @@ const project = props => {
           {props.project.projectDemo === "" ? projectDisable : projectLink}
 
           <a
+            className={"github-icon"}
             href={props.project.projectGithub}
             target="_blank"
             rel="noopener noreferrer"

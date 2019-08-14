@@ -1,0 +1,156 @@
+@import "../../../styles/variables";
+
+.Projects {
+  @include flex(row, center, stretch);
+  flex-wrap: wrap;
+  font-family: "DM Sans", sans-serif;
+  margin: 5rem 7% 5rem 7%;
+
+  // ---Responsive---
+  @include responsive(big-desktop) {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  @include responsive(mobile) {
+    margin: 2rem 2% 3rem 2%;
+  }
+  @include responsive(mobile-rotate) {
+    margin: 1rem 10% 1rem 10%;
+  }
+
+  .designer-link {
+    color: color(light-black);
+  }
+
+  .Project-container {
+    margin: 1.5rem;
+    background-color: color(white);
+    width: 400px;
+    box-shadow: 0 2px 6px color(lighter-gray), 0 -2px 6px color(lighter-gray);
+    border-radius: 5px;
+
+    // ---Responsive---
+    @include responsive(small-desktop) {
+      width: 360px;
+      margin: 1rem;
+    }
+    @include responsive(mobile) {
+      width: 280px;
+      margin: 1.3rem;
+    }
+
+    &:hover .view-project {
+      opacity: 1;
+    }
+    &:hover .project-image {
+      opacity: 0.7;
+    }
+
+    .image-container {
+      position: relative;
+
+      .project-image {
+        width: 100%;
+        height: auto;
+        border-radius: 5px 5px 0 0;
+        transition: opacity 0.2s ease;
+      }
+    }
+
+    .view-project {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      color: color(white);
+      background: color(light-black);
+      font-size: 1rem;
+      text-transform: capitalize;
+      border-radius: 20px;
+      padding: 0.3rem 0.7rem;
+      transition: all 0.35s ease;
+
+      // ---Responsive---
+      @include responsive(mobile) {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .Project-content {
+    padding: 1.3rem 2rem 1.5rem 2rem;
+
+    // ---Responsive---
+    @include responsive(mobile) {
+      padding: 0.5rem 1.5rem 1rem 1.5rem;
+    }
+    @include responsive(mobile-rotate) {
+      padding: 0.5rem 1.5rem 1rem 1.5rem;
+    }
+
+    h3 {
+      @include flex(row, space-between, flex-start);
+
+      // ---Responsive--
+      @include responsive(small-desktop) {
+        margin-bottom: 0.6rem;
+      }
+      @include responsive(mobile) {
+        margin-bottom: 0.4rem;
+      }
+      @include responsive(mobile-rotate) {
+        margin-bottom: 0.5rem;
+      }
+
+      margin-bottom: 0.8rem;
+      color: #343434;
+      font-weight: 600;
+      font-size: 1.45rem;
+
+      a,
+      div {
+        color: #343434;
+        font-weight: 600;
+        font-size: 1.45rem;
+
+        // ---Responsive---
+        @include responsive(small-desktop) {
+          font-size: 1.3rem;
+        }
+        @include responsive(mobile) {
+          font-size: 1.05rem;
+        }
+        @include responsive(mobile-rotate) {
+          font-size: 1.3rem;
+        }
+      }
+
+      .github-icon {
+        width: 28px;
+
+        // ---Responsive---
+        @include responsive(mobile) {
+          width: 20px;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      color: color(lighter-black);
+
+      // ---Responsive---
+      @include responsive(small-desktop) {
+        font-size: 0.9rem;
+      }
+      @include responsive(mobile) {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}

@@ -6,7 +6,8 @@ import emailLogo from "../../assets/images/email-dark.svg";
 import Backdrop from "../Backdrop/Backdrop";
 import SNS from "../SNS/SNS";
 
-import "./About.css";
+// import "./About.css";
+import "./styles/About.scss";
 
 class About extends Component {
   shouldComponentUpdate(nextProps, nextState) {

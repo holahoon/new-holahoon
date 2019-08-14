@@ -70,6 +70,12 @@ ol {
   margin-left: 12%;
 }
 
+@media (max-width: 450px) {
+  .margin-left-1 {
+    margin-left: 8%;
+  }
+}
+
 .margin-left-2 {
   margin-left: 16.67%;
 }
@@ -92,5 +98,11 @@ ol {
 
 .margin-right-1 {
   margin-right: 12%;
+}
+
+@media (max-width: 450px) {
+  .margin-right-1 {
+    margin-right: 0%;
+  }
 }
 /*# sourceMappingURL=App.css.map */
