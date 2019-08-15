@@ -1,7 +1,6 @@
 import React from "react";
 import { Fade } from "react-reveal";
 
-// import "./SNS.css";
 import "./styles/SNS.scss";
 
 const SNS = props => {

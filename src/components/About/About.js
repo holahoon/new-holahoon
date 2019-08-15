@@ -6,7 +6,6 @@ import emailLogo from "../../assets/images/email-dark.svg";
 import Backdrop from "../Backdrop/Backdrop";
 import SNS from "../SNS/SNS";
 
-// import "./About.css";
 import "./styles/About.scss";
 
 class About extends Component {
@@ -34,9 +33,10 @@ class About extends Component {
             <h2 className={"About-h2"}>Front End Developer</h2>
 
             <p className={"About-p"}>
-              I started web development with passion and it led me to be
-              determined to learn continuously. I always strive for improvement
-              with an open mind to be a good team player.
+              It all started with passion in learning to code that led me to be
+              determined to continuously learn web development. I'm always
+              striving for improvement with an open mind to be a good team
+              player.
             </p>
 
             <SNS

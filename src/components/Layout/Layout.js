@@ -6,7 +6,6 @@ import About from "../About/About";
 class Layout extends Component {
   state = {
     showModal: false
-    // showMenu: false
   };
 
   showModal = () => {
@@ -24,9 +23,7 @@ class Layout extends Component {
           showModal={this.state.showModal}
           showMenu={this.state.showMenu}
           openModal={this.showModal}
-          // toggleMenu={this.toggleMenu}
         />
-        {/*this.state.showModal ? about : null*/}
         <About showModal={this.state.showModal} closeModal={this.hideModal} />
 
         {this.props.children}

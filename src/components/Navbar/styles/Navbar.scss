@@ -1,0 +1,72 @@
+@import "../../../styles/variables";
+
+.Navbar-container {
+  @include flex(row, space-between, center);
+  padding: 3rem 0 1rem 0;
+  font-family: "DM Sans", sans-serif;
+  background: transparent;
+
+  // ---Responsive---
+  @include responsive(big-desktop) {
+    padding: 4rem 0 1rem 0;
+  }
+  @include responsive(mobile) {
+    @include flex(column, space-between, flex-start);
+    padding: 2rem 0 1rem 0;
+  }
+
+  .Navbar-ul {
+    @include flex(row, flex-start, center);
+
+    .NavLink,
+    .Navbar-ul-about {
+      color: color(light-black);
+      font-weight: 500;
+      font-size: 1.05rem;
+      transition: color 0.3s ease;
+      &:hover {
+        color: color(redish);
+        cursor: pointer;
+      }
+    }
+
+    .Logo {
+      font-size: 1.7rem;
+      font-weight: 500;
+      text-transform: capitalize;
+      color: color(light-black);
+
+      // ---Responsive---
+      @include responsive(mobile) {
+        font-size: 1.25rem;
+        font-weight: 600;
+        letter-spacing: 0.75px;
+      }
+    }
+
+    .selected {
+      color: color(redish);
+    }
+  }
+
+  .Navbar-menu {
+    li {
+      &:nth-child(2) {
+        margin-left: 3.5rem;
+
+        // ---Responsive---
+        @include responsive(mobile) {
+          margin-top: 0.4rem;
+          margin-left: 0%;
+        }
+      }
+    }
+
+    // ---Responsive---
+    @include responsive(mobile) {
+      @include flex(column, flex-start, flex-start);
+      margin-left: 8%;
+      margin-top: 1.5rem;
+    }
+  }
+}

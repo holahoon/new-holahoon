@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Fade } from "react-reveal";
 
-import "./Navbar.css";
+import "./styles/Navbar.scss";
 
 const navbar = props => {
   return (

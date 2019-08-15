@@ -11,7 +11,6 @@ import zigoGraph from "../../assets/images/zigograph-resized.jpg";
 import onTheCloud from "../../assets/images/onthecloud-resized.jpg";
 import firstHolaHoon from "../../assets/images/portfolio1-resized.jpg";
 
-// import "./Projects.css";
 import "./styles/Projects.scss";
 
 class Projects extends Component {
