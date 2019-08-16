@@ -46,7 +46,7 @@ class Projects extends Component {
       },
       {
         projectName: firstHolaHoon,
-        projectTitle: "Personal Portfolio",
+        projectTitle: "Holahoon v1",
         projectDescription: (
           <span>
             Developed a personal portfolio v1 in collaboration with a{" "}

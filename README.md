@@ -1,5 +1,7 @@
 # David Kim - Front End Developer
 
+## Holahoon Portfolio v2.
+
 ## [View Live](https://holahoon.com/)
 
 ## Project Overview
