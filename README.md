@@ -15,6 +15,7 @@
 - [React](https://github.com/facebook/react) - Front End JavaScript library
 - [React Router](https://github.com/ReactTraining/react-router) - Routing to navigate through different components
 - [React-reveal](https://www.react-reveal.com/) - Different types of animations (used Fade mostly)
+- [Sass](https://sass-lang.com/) - Used as a preprocessor to style using features like variables, nesting and mixins
 
 ## To do
 
