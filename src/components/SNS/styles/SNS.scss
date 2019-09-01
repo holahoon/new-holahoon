@@ -3,6 +3,20 @@
 .SNS-group {
   @include flex(column, center, center);
 
+  .icons {
+    font-size: 1.65rem;
+    color: color(medium-gray);
+    transition: color 0.4s ease;
+
+    &:hover {
+      color: color(redish);
+    }
+
+    @include responsive(big-desktop) {
+      font-size: 1.8rem;
+    }
+  }
+
   // ---Responsive---
   @include responsive(mobile) {
     @include flex(row, flex-start, stretch);
@@ -35,8 +49,8 @@
       margin-top: 0.8rem;
     }
 
-    img {
-      width: 30px;
-    }
+    // img {
+    //   width: 30px;
+    // }
   }
 }
