@@ -150,6 +150,13 @@
       }
 
       a {
+        &:hover .icons {
+          color: color(redish);
+        }
+        &:hover span {
+          color: color(lighter-black);
+        }
+
         @include flex(row, flex-start, center);
 
         // ---Responsive---
@@ -158,14 +165,27 @@
         }
       }
 
-      img {
-        width: 26.5px;
+      .icons {
+        color: color(lighter-black);
+        font-size: 1.4rem;
+        transition: color 0.3s ease;
 
-        // ---Responsive---
+        @include responsive(big-desktop) {
+          font-size: 1.5rem;
+        }
         @include responsive(mobile) {
-          width: 21px;
+          font-size: 1.2rem;
         }
       }
+
+      // img {
+      //   width: 26.5px;
+
+      //   // ---Responsive---
+      //   @include responsive(mobile) {
+      //     width: 21px;
+      //   }
+      // }
 
       span {
         color: color(medium-gray);
@@ -173,14 +193,11 @@
         margin-right: 1.5rem;
         font-size: 1.1rem;
         letter-spacing: 0.5px;
-        transition: color 0.2s ease;
-        &:hover {
-          color: color(redish);
-        }
+        transition: color 0.3s ease;
 
         // ---Responsive---
         @include responsive(big-desktop) {
-          font-size: 1.25rem;
+          font-size: 1.2rem;
         }
         @include responsive(small-desktop) {
           font-size: 1rem;

@@ -35,8 +35,8 @@ class About extends Component {
             <p className={"About-p"}>
               It all started with passion in learning to code that led me to be
               determined to continuously learn web development. I'm always
-              striving for improvement with an open mind to be a good team
-              player.
+              striving for improvement with an open mind to be an outstanding
+              developer.
             </p>
 
             <SNS
